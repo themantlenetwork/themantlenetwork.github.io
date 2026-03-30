@@ -8,3 +8,24 @@
 @import "basically-basic/themes/{{ site.data.theme.skin | default: 'default' }}";
 
 @import "basically-basic";
+
+/* keep header/logo unchanged */
+.masthead .inner,
+.sidebar .inner,
+.footer .inner {
+  max-width: 1024px;
+}
+
+/* widen and center only the main page area */
+.initial-content .inner {
+  max-width: 1400px;
+  margin: 0 auto;
+}
+
+/* make page/post body use the full available width */
+.layout--page .entry-content,
+.layout--post .entry-content {
+  width: 100%;
+  max-width: 100%;
+  margin: 0 auto;
+}
