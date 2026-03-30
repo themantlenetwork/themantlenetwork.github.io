@@ -3,7 +3,7 @@ title: The MANTLE NETWORK Initiative
 email: 
 description: An international collective of scientists studying the Earth’s mantle
 baseurl: # the optional subpath of your site, e.g. "/blog"
-url: # the base hostname & protocol for your site e.g. "https://mmistakes.github.io"
+url: "https://themantlenetwork.github.io"
 author:
   name: Romain Tilhac
   twitter:
@@ -26,8 +26,9 @@ collections:
     permalink: /:name/
 
 # Build settings
-theme: jekyll-theme-basically-basic
-plugins: # previsously gems
+remote_theme: mmistakes/jekyll-theme-basically-basic
+plugins:
+  - jekyll-remote-theme
   - jekyll-feed
   - jekyll-seo-tag
   - jekyll-sitemap
