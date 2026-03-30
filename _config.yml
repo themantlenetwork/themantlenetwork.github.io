@@ -31,4 +31,3 @@ plugins: # previsously gems
   - jekyll-feed
   - jekyll-seo-tag
   - jekyll-sitemap
-  - jekyll-paginate
