@@ -1,32 +1,37 @@
 lang: en-US
 title: The MANTLE NETWORK Initiative
-email: 
+email:
 description: An international collective of scientists studying the Earth’s mantle
-baseurl: # the optional subpath of your site, e.g. "/blog"
+
+baseurl: ""
 url: "https://themantlenetwork.github.io"
+
 author:
   name: Romain Tilhac
   twitter:
   picture:
+
 twitter_username:
 github_username:
 logo: assets/images/logo.png
-search: true # false (default)
-search_full_content: false # true, false (default)
-search_provider: # lunr (default), algolia
+
+search: true
+search_full_content: false
+search_provider:
+
 algolia:
-  application_id: # YOUR_APPLICATION_ID
-  index_name: # YOUR_INDEX_NAME
-  search_only_api_key: # YOUR_SEARCH_ONLY_API_KEY
-  powered_by: # true (default), false
+  application_id:
+  index_name:
+  search_only_api_key:
+  powered_by:
 
 collections:
   pages:
     output: true
     permalink: /:name/
 
-# Build settings
 remote_theme: mmistakes/jekyll-theme-basically-basic
+
 plugins:
   - jekyll-remote-theme
   - jekyll-feed
