@@ -5,7 +5,7 @@ permalink: /about/
 image: /assets/images/trinity_hero.jpg
 ---
 
-The MANTLE NETWORK Initiative is an international collective of scientists studying the Earth’s mantle. It emerged from the EMAW and Orogenic Lherzolite communities in 2025.
+The MANTLE NETWORK Initiative is an international collective of scientists studying the Earth’s mantle.
 
 # Activities
 
