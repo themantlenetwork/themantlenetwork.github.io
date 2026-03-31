@@ -5,7 +5,7 @@ image: /assets/images/trinity_hero.jpg
 permalink: /meetings/
 ---
 
-The **MANTLE NETWORK Meetings** are dedicated to mantle-related research.
+The MANTLE NETWORK Meetings showcase state-of-the-art mantle research.
 
 <div class="button-description">
   <a href="/emaw" class="btn btn-emaw">Earth Mantle Workshop (EMAW)</a>
