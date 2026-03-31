@@ -37,3 +37,36 @@
     }
   }
 }
+
+
+.btn-emaw {
+  background-color: #e84a5f;
+
+  &:hover {
+    background-color: lighten(#e84a5f, 10%);
+  }
+}
+
+.btn-lherzolite {
+  background-color: #b56586;
+
+  &:hover {
+    background-color: lighten(#b56586, 10%);
+  }
+}
+
+.btn-merema {
+  background-color: #6c8ebf;
+
+  &:hover {
+    background-color: lighten(#6c8ebf, 10%);
+  }
+}
+
+.btn-webinars {
+  background-color: #1f9acb;
+
+  &:hover {
+    background-color: lighten(#1f9acb, 10%);
+  }
+}

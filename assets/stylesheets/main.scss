@@ -29,3 +29,66 @@
   max-width: 100%;
   margin: 0 auto;
 }
+/* font size for contents of home layout */
+.home-content {
+  font-size: 25px;
+}
+
+/* font size for contents of page layout */
+.page-content {
+  font-size: 20px;
+}
+
+.intro-image {
+  width: 100%; 
+  // Make the container span full width of the page
+
+  height: clamp(200px, 30vw, 420px); 
+  // Responsive height:
+  // - minimum: 200px (small screens)
+  // - preferred: 30% of viewport width
+  // - maximum: 420px (prevents huge hero on wide screens)
+
+  overflow: hidden; 
+  // Ensures any part of the image that exceeds the container is cropped
+}
+
+.intro-image img {
+  width: 100%; 
+  // Stretch image horizontally to fill container
+
+  height: 100%; 
+  // Force image to match container height (required for cropping)
+
+  object-fit: cover; 
+  // Scale image to completely fill container without distortion
+  // Excess parts are cropped instead of squished
+
+  object-position: center 20%; 
+  // Controls which part of the image stays visible:
+  // - "center" = horizontal alignment
+  // - "20%" = vertical focus (slightly toward top)
+  //   try:
+  //     center       → middle crop
+  //     center top   → top priority
+  //     center 0%    → extreme top
+  //     center 50%   → exact center
+
+  display: block; 
+  // Removes default inline spacing under images
+}
+
+// 
+.button-description {
+  margin-bottom: 1.6rem;
+}
+.button-description p {
+  margin-top: 0.4rem;
+  font-size: 0.95em;
+  opacity: 0.75;
+}
+
+  // Space after paragraphs
+p {
+  margin-bottom: 2em;
+}
