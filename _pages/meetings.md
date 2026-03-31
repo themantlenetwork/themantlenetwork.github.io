@@ -5,7 +5,7 @@ image: /assets/images/trinity_hero.jpg
 permalink: /meetings/
 ---
 
-The MANTLE NETWORK Meetings showcase state-of-the-art mantle research.
+The MANTLE NETWORK Initiative seminars showcase state-of-the-art mantle research.
 
 <div class="button-description">
   <a href="/emaw" class="btn btn-emaw">Earth Mantle Workshop (EMAW)</a>
