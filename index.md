@@ -4,8 +4,8 @@ title: Home
 image: /assets/images/trinity_hero.jpg
 ---
 
-# Welcome to the MANTLE NETWORK Initiative
+# Welcome to the *mantlenetwork.org*
 
-An international collective of scientists studying the Earth’s mantle.
+The MANTLE NETWORK Initiative is an international collective of scientists studying the Earth’s mantle.
 
-<a href="/about" class="btn btn-lherzolite">Learn more</a>
+<a href="/about" class="btn btn">Learn more</a>

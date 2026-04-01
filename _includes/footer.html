@@ -2,9 +2,17 @@
   <div class="inner">
     <div class="copyright">
       {% if site.copyright %}
-        {{ site.copyright | markdownify }}
+        <p>
+          {{ site.copyright | markdownify | strip_html }}
+          | <a href="/credits">Credits</a>
+          | <a href="/disclaimer">Disclaimer</a>
+        </p>
       {% else %}
-        <p>&copy; {{ site.time | date: '%Y' }} {{ site.title }}.</p>
+        <p>
+          &copy; {{ site.time | date: '%Y' }} {{ site.title }}
+          | <a href="/credits">Credits</a>
+          | <a href="/disclaimer">Disclaimer</a>
+        </p>
       {% endif %}
     </div>
   </div>

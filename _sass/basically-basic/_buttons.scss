@@ -3,7 +3,11 @@
    ========================================================================== */
 
 .btn {
-  display: inline-block;
+  display: inline-flex;      // replace inline-block
+  align-items: center;       // add this
+  justify-content: center;   // add this
+  white-space: nowrap;       // add this
+  font-size: clamp(0.75rem, 2vw, 1rem); // add this
   padding: 0.5em 1em;
   border: 0;
   border-radius: $border-radius;
@@ -69,4 +73,12 @@
   &:hover {
     background-color: lighten(#1f9acb, 10%);
   }
+}
+
+
+.btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  white-space: nowrap;
 }

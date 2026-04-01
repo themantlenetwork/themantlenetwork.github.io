@@ -5,7 +5,8 @@ image: /assets/images/trinity_hero.jpg
 permalink: /meetings/
 ---
 
-The MANTLE NETWORK Initiative showcases state-of-the-art mantle research through several international meetings.
+The MANTLE NETWORK Initiative coordinates several international meetings 
+to share the latest mantle research and connect scientists from around the world.
 
 <div class="button-description">
   <a href="/emaw" class="btn btn-emaw">Earth Mantle Workshop (EMAW)</a>

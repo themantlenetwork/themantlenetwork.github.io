@@ -1,7 +1,7 @@
 ---
 # Only the main Sass file needs front matter (the dashes are enough)
 ---
-
+ 
 @charset "utf-8";
 
 // Theme skin
@@ -39,46 +39,25 @@
   font-size: 20px;
 }
 
+/* Default = narrower (applies everywhere) */
 .intro-image {
-  width: 100%; 
-  // Make the container span full width of the page
-
-  height: clamp(200px, 30vw, 420px); 
-  // Responsive height:
-  // - minimum: 200px (small screens)
-  // - preferred: 30% of viewport width
-  // - maximum: 420px (prevents huge hero on wide screens)
-
-  overflow: hidden; 
-  // Ensures any part of the image that exceeds the container is cropped
+  width: 100%; /* full width */
+  height: clamp(140px, 18vw, 260px); /* compact responsive height */
+  overflow: hidden; /* crop overflow */
 }
 
 .intro-image img {
-  width: 100%; 
-  // Stretch image horizontally to fill container
-
-  height: 100%; 
-  // Force image to match container height (required for cropping)
-
-  object-fit: cover; 
-  // Scale image to completely fill container without distortion
-  // Excess parts are cropped instead of squished
-
-  object-position: center 20%; 
-  // Controls which part of the image stays visible:
-  // - "center" = horizontal alignment
-  // - "20%" = vertical focus (slightly toward top)
-  //   try:
-  //     center       → middle crop
-  //     center top   → top priority
-  //     center 0%    → extreme top
-  //     center 50%   → exact center
-
-  display: block; 
-  // Removes default inline spacing under images
+  width: 100%; /* fill width */
+  height: 100%; /* match container height */
+  object-fit: cover; /* crop without distortion */
+  object-position: center 20%; /* focus slightly top */
+  display: block; /* remove inline gap */
 }
 
-// 
+/* Homepage override = larger hero */
+.layout--home .intro-image {
+  height: clamp(200px, 30vw, 420px); /* taller hero on home */
+}
 .button-description {
   margin-bottom: 1.6rem;
 }
