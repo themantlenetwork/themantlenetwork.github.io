@@ -8,7 +8,7 @@
 @import "basically-basic/themes/{{ site.data.theme.skin | default: 'default' }}";
 
 @import "basically-basic";
-
+@import "hero-slider";
 /* keep header/logo unchanged */
 .masthead .inner,
 .sidebar .inner,

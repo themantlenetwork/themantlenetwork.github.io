@@ -1,0 +1,21 @@
+<div class="hero-slider">
+  <div class="slides">
+    {% for slide in site.data.slides %}
+    <div class="slide">
+      <img src="{{ slide.image }}" alt="{{ slide.alt }}">
+      <div class="caption">
+        <h1>{{ slide.title }}</h1>
+        <p>{{ slide.text }}</p>
+        {% if slide.button_url %}
+        <a href="{{ slide.button_url }}" class="btn">
+          {{ slide.button_text }}
+        </a>
+        {% endif %}
+      </div>
+    </div>
+    {% endfor %}
+  </div>
+
+  <button class="prev">&#10094;</button>
+  <button class="next">&#10095;</button>
+</div>
