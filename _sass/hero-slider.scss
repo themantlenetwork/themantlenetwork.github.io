@@ -1,66 +1,113 @@
 .hero-slider {
   position: relative;
   width: 100%;
-  height: 80vh;
+  aspect-ratio: 16/5; 
+  max-height: 80vh;
   overflow: hidden;
+  background: #000;
 
+  /* =========================
+     SLIDES CONTAINER
+  ========================== */
   .slides {
-    display: flex;
+    display: flex !important;
+    flex-wrap: nowrap !important;
+    height: 100%;
     transition: transform 0.5s ease-in-out;
-    height: 100%;
   }
 
+  /* =========================
+     INDIVIDUAL SLIDE
+  ========================== */
   .slide {
-    min-width: 100%;
-    position: relative;
+    min-width: 100% !important;
+    flex: 0 0 100% !important;
     height: 100%;
-
-    img {
-      width: 100%;
-      height: 100%;
-      object-fit: cover;
-      display: block;
-    }
+    position: relative;
   }
 
+  /* =========================
+     IMAGE HANDLING
+  ========================== */
+  img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; // 🔥 prevents distortion
+    display: block;
+  }
+
+  /* =========================
+     CAPTION OVERLAY
+  ========================== */
   .caption {
     position: absolute;
     top: 50%;
-    left: 10%;
+    left: 8%;
     transform: translateY(-50%);
     color: white;
     max-width: 500px;
-    padding: 0 15px;
+    z-index: 5;
+
+    h1 {
+      font-size: clamp(1.5rem, 3vw, 3rem);
+      margin-bottom: 10px;
+    }
+
+    p {
+      font-size: clamp(0.9rem, 1.5vw, 1.2rem);
+    }
   }
 
+  /* =========================
+     BUTTON STYLE
+  ========================== */
   .btn {
     display: inline-block;
-    margin-top: 10px;
-    padding: 10px 20px;
+    margin-top: 12px;
+    padding: 10px 18px;
     background: white;
     color: black;
     text-decoration: none;
+    font-weight: 500;
+    border-radius: 4px;
   }
 
+  /* =========================
+     NAVIGATION ARROWS
+  ========================== */
   .prev,
   .next {
     position: absolute;
     top: 50%;
     transform: translateY(-50%);
-    background: rgba(0,0,0,0.5);
+    background: rgba(0, 0, 0, 0.5);
     color: white;
     border: none;
-    padding: 10px;
+    padding: 10px 12px;
     cursor: pointer;
     z-index: 10;
+    transition: background 0.2s ease;
   }
 
-  .prev { left: 10px; }
-  .next { right: 10px; }
+  .prev:hover,
+  .next:hover {
+    background: rgba(0, 0, 0, 0.7);
+  }
 
-  /* ===== MOBILE FIX ===== */
+  .prev {
+    left: 10px;
+  }
+
+  .next {
+    right: 10px;
+  }
+
+  /* =========================
+     MOBILE ADJUSTMENTS
+  ========================== */
   @media (max-width: 768px) {
-    height: 60vh;
+    aspect-ratio: 4 / 3; // better readability on phones
+    max-height: 60vh;
 
     .caption {
       left: 5%;
@@ -74,7 +121,15 @@
 
     .prev,
     .next {
-      padding: 8px;
+      padding: 8px 10px;
     }
+  }
+
+  /* =========================
+     SAFETY OVERRIDES (THEME FIXES)
+  ========================== */
+  .slides,
+  .slide {
+    box-sizing: border-box;
   }
 }
