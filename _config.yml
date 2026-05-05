@@ -7,13 +7,13 @@ baseurl: ""
 url: "https://themantlenetwork.github.io"
 
 author:
-  name: Romain Tilhac
+  name: The MANTLE NETWORK Initiative
   twitter:
   picture:
 
 twitter_username:
 github_username:
-logo: assets/images/logo.png
+logo: /assets/images/logo.png
 
 search: true
 search_full_content: false
