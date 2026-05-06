@@ -1,7 +1,7 @@
 ---
 layout: page
 title: Meetings
-image: /assets/images/trinity_hero.jpg
+image: /assets/images/emaw2018_group.jpg
 permalink: /meetings/
 ---
 

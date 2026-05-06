@@ -9,7 +9,22 @@
 
 @import "basically-basic";
 @import "hero-slider";
-@import "hero-slider_caption";
+
+/* Remove extra bottom space from main wrapper */
+.wrapper {
+  padding-bottom: 0;
+}
+
+/* Prevent last element in page content from adding extra margin */
+.initial-content > *:last-child {
+  margin-bottom: 0;
+}
+
+/* Ensure homepage content does not push footer down */
+.home-content {
+  margin-bottom: 0;
+}
+
 /* keep header/logo unchanged */
 .masthead .inner,
 .sidebar .inner,

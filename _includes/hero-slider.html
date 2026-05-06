@@ -1,21 +1,43 @@
-<div class="hero-slider">
+<div class="hero-slider"
+     style="--slider-ratio: {{ page.slider_ratio }};">
+
   <div class="slides">
-    {% for slide in site.data.slides %}
+
+    {% for slide in include.slides %}
+
     <div class="slide">
       <img src="{{ slide.image }}" alt="{{ slide.alt }}">
+
       <div class="caption">
+
+        {% if slide.title %}
         <h1>{{ slide.title }}</h1>
+        {% endif %}
+
+        {% if slide.text %}
         <p>{{ slide.text }}</p>
+         {% endif %}
+
         {% if slide.button_url %}
         <a href="{{ slide.button_url }}" class="btn">
           {{ slide.button_text }}
+
         </a>
         {% endif %}
+
       </div>
+
+        {% if slide.credit %}
+          <span class="credit">{{ slide.credit }}</span>
+        {% endif %}
+
     </div>
+
     {% endfor %}
+
   </div>
 
   <button class="prev">&#10094;</button>
   <button class="next">&#10095;</button>
+  
 </div>

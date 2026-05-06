@@ -4,6 +4,7 @@ skin: default   # default, night, plum, sea, soft, steel
 # Navigation (main menu order)
 navigation_pages:
   - _pages/about.md
+  - _pages/research.md
   - _pages/meetings.md
   - _pages/webinars.md
   - _pages/agenda.md
