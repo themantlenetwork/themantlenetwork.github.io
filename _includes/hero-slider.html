@@ -8,24 +8,25 @@
     <div class="slide">
       <img src="{{ slide.image }}" alt="{{ slide.alt }}">
 
-      <div class="caption">
+    <div class="caption">
 
+      <div class="caption-text">
         {% if slide.title %}
         <h1>{{ slide.title }}</h1>
         {% endif %}
 
         {% if slide.text %}
         <p>{{ slide.text }}</p>
-         {% endif %}
-
-        {% if slide.button_url %}
-        <a href="{{ slide.button_url }}" class="btn">
-          {{ slide.button_text }}
-
-        </a>
         {% endif %}
-
       </div>
+
+      {% if slide.button_url %}
+      <a href="{{ slide.button_url }}" class="btn">
+        {{ slide.button_text }}
+      </a>
+      {% endif %}
+
+    </div>
 
         {% if slide.credit %}
           <span class="credit">{{ slide.credit }}</span>

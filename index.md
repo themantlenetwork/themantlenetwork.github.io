@@ -10,14 +10,14 @@ slides:
 
   - image: /assets/images/mantle-illustration.jpg
     title: "The mantle: 84% of our planet"
-    text: "Beneath Earth’s thin crust lies the mantle, a vast and largely solid layer of silicate rock extending to about 2,900 km depth. The mantle plays a central role in shaping the physical and chemical evolution of our planet."
+    text: "Beneath Earth’s thin crust lies the mantle, a vast layer of silicate rock extending to about 2,900 km depth that plays a central role in the physical and chemical evolution of our planet."
     credit: "Artist’s view of the mantle’s movements responsible for plate tectonics. Credit: C. Lunau / SPL / Cosmos."
 
   - image: /assets/images/san-carlos.jpg
     title: "Exploring the dynamic interior of our planet"
     text: "Modern mantle science combines geology, geodynamics, geophysics, geochemistry, petrology, mineral physics, and crystallography. Researchers are revealing how the mantle drives Earth’s continuous internal reshaping and long-term evolution."
     credit: "Mantle peridotite xenoliths hosted in basanites from the San Carlos volcanic field, Arizona. Credit: R. Tilhac."
-    button_text: "Learn more about mantle researcg"
+    button_text: "Learn more about mantle research"
     button_url: "/research"
 
   - image: /assets/images/cabo-ortegal.jpg
