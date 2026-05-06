@@ -65,8 +65,6 @@ slides:
     credit:  "Seismic tomography image of the mantle beneath North America. Credit: Suzan van der Lee (Northwestern University, Evanston, IL)."
 ---
 
-***mantlenetworg.org***
-
 The MANTLE NETWORK Initiative is an international collective of scientists studying the Earth’s mantle.
 
 Our activities include webinars and international meetings to promote scientific communication, collaboration, and knowledge sharing across the global mantle research community.

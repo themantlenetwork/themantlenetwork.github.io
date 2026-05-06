@@ -5,9 +5,7 @@ permalink: /about/
 image: /assets/images/trinity_hero.jpg
 ---
 
-The MANTLE NETWORK Initiative is an international collective of researchers and students dedicated to advancing knowledge of the Earth’s mantle and related planetary processes.
-
-# Activities
+Born from the Lherzolite Conference and EMAW communities, the MANTLE NETWORK Initiative is an international collective of researchers and students dedicated to advancing knowledge of the Earth’s mantle and related planetary processes.
 
 Our activities include webinars and international meetings to promote scientific communication, collaboration and knowledge sharing across the global mantle research community.
 
