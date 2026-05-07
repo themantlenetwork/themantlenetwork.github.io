@@ -10,7 +10,6 @@ This website was designed and developed by  [Romain Tilhac](https://romaintilhac
 ### Design & Development
 - Website built using [Jekyll](https://jekyllrb.com/)
 - Theme based on [Basically Basic Jekyll Theme](https://github.com/mmistakes/jekyll-theme-basically-basic) by Michael Rose
-- Customized and maintained by Romain Tilhac
 
 ### Hosting & Infrastructure
 - Hosted on [GitHub Pages](https://pages.github.com/)
@@ -19,8 +18,6 @@ This website was designed and developed by  [Romain Tilhac](https://romaintilhac
 
 ### Content
 - All scientific content, text, and materials are produced by The MANTLE NETWORK Initiative unless otherwise stated
-
-### Media & Assets
 - Images and visual materials are either original or used with appropriate rights and attribution
 
 ---

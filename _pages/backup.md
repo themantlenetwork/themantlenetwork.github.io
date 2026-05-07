@@ -1,5 +1,10 @@
 credit: "Branching pyroxenite dykes in the mantle section of the Trinity Ophiolite, California. Credit: R. Tilhac."
 credit: "Artist’s view of the mantle’s movements responsible for plate tectonics. Credit: C. Lunau / SPL / Cosmos."
 credit: "Mantle peridotite xenoliths hosted in basanites from the San Carlos volcanic field, Arizona. Credit: R. Tilhac."
-
 credit: The Earth with the upper mantle revealed. Researchers at The University of Texas at Austin have discovered a previously unknown layer of partly molten rock in a key region just below the tectonic plates. Credit: Leonello Calvetti/Dreamstime
+credit:  "Seismic tomography image of the mantle beneath North America. Credit: Suzan van der Lee (Northwestern University, Evanston, IL)."
+credit:  "Mantle convection model computed with real-world geophysical data. Credits: Terra-Neo Consortium."
+credit:  "Lava lake atop Kilauea volcano on Hawaii’s Big Island. Credits: U.S. Geological Survey."
+credit: "Clean room. Credit: University of Otago - Labo-works Architecture."
+credit: "Multi-anvil cell assembly for high-pressure experiments. Credit: COMPRES Image Gallery."
+credit: "Serpentine veins and boudinaged pyroxenite in a mantle harzburgite from the Cabo Ortegal Complex, NW Spain. Credit: R. Tilhac."

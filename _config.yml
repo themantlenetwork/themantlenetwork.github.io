@@ -9,7 +9,7 @@ url: "https://themantlenetwork.github.io"
 author:
   name: The MANTLE NETWORK Initiative
   twitter:
-  picture:
+  picture: 
 
 twitter_username:
 github_username:
@@ -34,6 +34,5 @@ remote_theme: mmistakes/jekyll-theme-basically-basic
 
 plugins:
   - jekyll-remote-theme
-  - jekyll-feed
   - jekyll-seo-tag
   - jekyll-sitemap

@@ -5,7 +5,7 @@ slides:
   - image: /assets/images/trinity_hero.jpg
     title: "Welcome to <em>mantlenetwork.org</em>"
     text: "An international collective of scientists studying the Earth’s mantle."
-    button_text: /Learn more
+    button_text: Learn more about the initiative
     button_url: /about
 
   - image: /assets/images/mantle-illustration2.jpg
@@ -19,7 +19,7 @@ slides:
   - image: /assets/images/mantle-convection.jpg
     title: "Exploring our planet's interior"
     text: "Researchers are revealing how the mantle drives Earth’s continuous internal reshaping and long-term evolution."
-    button_text: /Learn more
+    button_text: Learn more about mantle research
     button_url: /research
 ---
 
