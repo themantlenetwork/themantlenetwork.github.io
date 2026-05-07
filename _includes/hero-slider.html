@@ -8,29 +8,39 @@
     <div class="slide">
       <img src="{{ slide.image }}" alt="{{ slide.alt }}">
 
-    <div class="caption">
+      <div class="caption">
 
-      <div class="caption-text">
-        {% if slide.title %}
-        <h1>{{ slide.title }}</h1>
+        {% if slide.caption_url %}
+        <a href="{{ slide.caption_url }}" class="caption-link">
         {% endif %}
 
-        {% if slide.text %}
-        <p>{{ slide.text }}</p>
+          <div class="caption-text">
+
+            {% if slide.title %}
+            <h1>{{ slide.title }}</h1>
+            {% endif %}
+
+            {% if slide.text %}
+            <p>{{ slide.text }}</p>
+            {% endif %}
+
+          </div>
+
+        {% if slide.caption_url %}
+        </a>
         {% endif %}
+
+        {% if slide.button_url %}
+        <a href="{{ slide.button_url }}" class="btn">
+          {{ slide.button_text | default: "Learn More" }}
+        </a>
+        {% endif %}
+
       </div>
 
-      {% if slide.button_url %}
-      <a href="{{ slide.button_url }}" class="btn">
-        {{ slide.button_text }}
-      </a>
+      {% if slide.credit %}
+      <span class="credit">{{ slide.credit }}</span>
       {% endif %}
-
-    </div>
-
-        {% if slide.credit %}
-          <span class="credit">{{ slide.credit }}</span>
-        {% endif %}
 
     </div>
 
@@ -40,5 +50,5 @@
 
   <button class="prev">&#10094;</button>
   <button class="next">&#10095;</button>
-  
+
 </div>

@@ -1,14 +1,22 @@
 <header class="intro">
+
   {% if page.image %}
     {% assign intro_image = page.image.path | default: page.image | relative_url | escape %}
     <div class="intro-image">
-      <img src="{{ intro_image }}" alt="{{ page.title }}">
+      <img src="{{ intro_image }}">
     </div>
   {% endif %}
 
   <div class="inner">
+
     <div class="intro-text">
-      <h1 id="page-title" class="intro-title">{{ page.alt_title | default: page.title | default: site.title | markdownify | strip_html }}</h1>
+
+      {% if page.title and page.title != "" %}
+      <h1 id="page-title" class="intro-title">
+        {{ page.title | markdownify | strip_html }}
+      </h1>
+      {% endif %}
+
       {% if page.sub_title %}
         <p class="intro-subtitle">{{ page.sub_title | markdownify | strip_html }}</p>
       {% endif %}
@@ -26,6 +34,9 @@
           {% endfor %}
         </ul>
       {% endif %}
+
     </div>
+
   </div>
+
 </header>

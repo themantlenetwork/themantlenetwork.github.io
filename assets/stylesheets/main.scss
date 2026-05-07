@@ -1,14 +1,19 @@
 ---
-# Only the main Sass file needs front matter (the dashes are enough)
 ---
  
 @charset "utf-8";
 
-// Theme skin
 @import "basically-basic/themes/{{ site.data.theme.skin | default: 'default' }}";
-
 @import "basically-basic";
+
 @import "hero-slider";
+
+/* Neutralize first paragraph styles */
+.entry-content p:first-child,
+.entry-content p:first-of-type {
+  font-size: inherit;
+  font-weight: inherit;
+}
 
 /* Remove extra bottom space from main wrapper */
 .wrapper {
@@ -20,11 +25,6 @@
   margin-bottom: 0;
 }
 
-/* Ensure homepage content does not push footer down */
-.home-content {
-  margin-bottom: 0;
-}
-
 /* keep header/logo unchanged */
 .masthead .inner,
 .sidebar .inner,
@@ -32,28 +32,17 @@
   max-width: 1024px;
 }
 
-/* widen and center only the main page area */
+/* widen and center the main page area */
 .initial-content .inner {
   max-width: 1400px;
   margin: 0 auto;
 }
 
-/* make page/post body use the full available width */
-.layout--page .entry-content,
-.layout--post .entry-content {
+/* make body use the full available width */
+.entry-content {
   width: 100%;
   max-width: 100%;
   margin: 0 auto;
-}
-
-/* font size for contents of home layout 
-.home-content {
-  font-size: 25px;
-}*/
-
-/* font size for contents of page layout */
-.page-content {
-  font-size: 20px;
 }
 
 /* Default = narrower (applies everywhere) */
@@ -71,10 +60,6 @@
   display: block; /* remove inline gap */
 }
 
-/* Homepage override = larger hero */
-.layout--home .intro-image {
-  height: clamp(200px, 30vw, 420px); /* taller hero on home */
-}
 .button-description {
   margin-bottom: 1.6rem;
 }
@@ -84,7 +69,7 @@
   opacity: 0.75;
 }
 
-  // Space after paragraphs
+// Space after paragraphs
 p {
   margin-bottom: 2em;
 }

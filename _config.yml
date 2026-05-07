@@ -16,7 +16,7 @@ github_username:
 logo: /assets/images/logo.png
 
 search: true
-search_full_content: false
+search_full_content: true
 search_provider:
 
 algolia:

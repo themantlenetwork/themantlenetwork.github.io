@@ -1,36 +1,30 @@
 <header class="intro">
+
   {% if page.image %}
     {% assign intro_image = page.image.path | default: page.image | relative_url | escape %}
     <div class="intro-image">
-      <img src="{{ intro_image }}" alt="{{ page.title }}">
+      <img src="{{ intro_image }}">
+
+      {% if page.caption %}
+        <div class="intro-image-caption">
+          {{ page.caption }}
+        </div>
+      {% endif %}
     </div>
   {% endif %}
 
   <div class="inner">
+
     <div class="intro-text">
+
+      {% if page.title and page.title != "" %}
+      <h1 id="page-title" class="intro-title">
+        {{ page.title | markdownify | strip_html }}
+      </h1>
+      {% endif %}
 
       {% if page.sub_title %}
         <p class="intro-subtitle">{{ page.sub_title | markdownify | strip_html }}</p>
-      {% endif %}
-
-      {% if page.date %}
-        {% include author %}
-        <p class="entry-meta">
-          {% if author_name %}<span class="byline-item">{{ author_name | prepend: 'by ' }}</span>{% endif %}
-          <span class="byline-item">
-            <span class="icon">{% include icon-calendar.svg %}</span>
-            <time datetime="{{ page.date | date_to_xmlschema }}">
-              {{ page.date | date: "%B %-d, %Y" }}
-            </time>
-          </span>
-          {% if page.read_time %}
-            <span class="byline-item">
-              <span class="icon">{% include icon-stopwatch.svg %}</span>
-              {% capture read_time %}{% include read-time.html %}{% endcapture %}
-              {{ read_time | strip }}
-            </span>
-          {% endif %}
-        </p>
       {% endif %}
 
       {% if page.introduction %}
@@ -45,9 +39,7 @@
             <li>
               <a href="{{ action.url }}" class="btn">
                 {% if action.icon %}
-                  <span class="icon">
-                    {% include {{ action.icon | prepend: 'icon-' | append: '.svg' }} %}
-                  </span>
+                  <span class="icon">{% include {{ action.icon | prepend: 'icon-' | append: '.svg' }} %}</span>
                 {% endif %}
                 {{ action.label }}
               </a>
@@ -57,5 +49,7 @@
       {% endif %}
 
     </div>
+
   </div>
+
 </header>
