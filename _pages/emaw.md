@@ -22,6 +22,6 @@ The first workshop on European mantle petrology was held in Ferrara (Italy) in 2
 
 - **4<sup>th</sup> EMAW** 30 June - 2July Toulouse (France) [Program page](https://sfmc-fr.org/wp-content/uploads/EMAW2021-3rd-circular.pdf). 
 
-- **5<sup>th</sup> EMAW** 13 - 16 July 2025 - Vienna (Austria)
+- **5<sup>th</sup> EMAW** 13 - 16 July 2025 - Vienna (Austria) [Abstract book](/resources/EMAW25_abstract-book.pdf).
 
 - **6<sup>th</sup> EMAW** dates TBA - Sopron (Hungary)  [Preliminary page](https://emaw2027.epss.hu/en/).
