@@ -6,14 +6,17 @@ description: An international collective of scientists studying the Earth’s ma
 baseurl: ""
 url: "https://mantlenetwork.org"
 
+social:
+  name: The MANTLE NETWORK Initiative
+
 author:
   name: The MANTLE NETWORK Initiative
   twitter:
   picture: 
 
 twitter_username:
-github_username:
-logo: /assets/images/logo.png
+github_username: themantlenetwork
+logo: https://mantlenetwork.org/assets/images/logo.png
 
 search: true
 search_full_content: true
