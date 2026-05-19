@@ -14,6 +14,6 @@ The goals of the initiative are to:
 
 The initiative emerged during the Lherzolite Conference 2024 and EMAW 2025, and [mantlenetwork.org](https://mantlenetwork.org) was launched 2026. It aims to showcase mantle science and serve as a hub for resources, webinars, and international meeting coordination.
 
-To learn more about our activites:
+To learn more about our activities:
 
 <a href="/meetings" class="btn btn-lherzolite">Meetings</a> <a href="/webinars" class="btn btn-webinars">Webinars</a>
