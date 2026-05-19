@@ -1,8 +1,8 @@
 ---
 layout: page
-title: Geophysics
+title: Geophysics & remote sensing
 image: /assets/images/tomography.jpg
 permalink: /geophysics/
 ---
 
-Coming soon!
+{% include coming-soon.html community=page.title %}

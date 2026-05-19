@@ -5,4 +5,4 @@ image: /assets/images/hawaii.jpg
 permalink: /volcanology/
 ---
 
-Coming soon!
+{% include coming-soon.html community=page.title %}

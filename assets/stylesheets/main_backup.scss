@@ -1,0 +1,93 @@
+---
+---
+ 
+@charset "utf-8";
+
+@import "basically-basic/themes/{{ site.data.theme.skin | default: 'default' }}";
+@import "basically-basic";
+
+@import "hero-slider";
+
+/* Neutralize first paragraph styles */
+.entry-content p:first-child,
+.entry-content p:first-of-type {
+  font-size: inherit;
+  font-weight: inherit;
+}
+
+/* Remove extra bottom space from main wrapper */
+.wrapper {
+  padding-bottom: 0;
+}
+
+/* Prevent last element in page content from adding extra margin */
+.initial-content > *:last-child {
+  margin-bottom: 0;
+}
+
+/* keep header/logo unchanged */
+.masthead .inner,
+.sidebar .inner,
+.footer .inner {
+  max-width: 1024px;
+}
+
+/* widen and center the main page area */
+.initial-content .inner {
+  max-width: 1400px;
+  margin: 0 auto;
+}
+
+/* make body use the full available width */
+.entry-content {
+  width: 100%;
+  max-width: 100%;
+  margin: 0 auto;
+}
+
+/* Default = narrower (applies everywhere) */
+.intro-image {
+  width: 100%; /* full width */
+  height: clamp(140px, 18vw, 260px); /* compact responsive height */
+  overflow: hidden; /* crop overflow */
+}
+
+.intro-image img {
+  width: 100%; /* fill width */
+  height: 100%; /* match container height */
+  object-fit: cover; /* crop without distortion */
+  object-position: center 20%; /* focus slightly top */
+  display: block; /* remove inline gap */
+}
+
+.button-description {
+  margin-bottom: 1.6rem;
+}
+.button-description p {
+  margin-top: 0.4rem;
+  font-size: 0.95em;
+  opacity: 0.75;
+}
+
+// Space after paragraphs
+p {
+  margin-bottom: 2em;
+}
+
+/* ================================
+   Links override
+================================== */
+
+.entry-content a,
+.page-content a {
+  color: inherit;
+  text-decoration: none;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.22);
+  transition: border-color 0.15s ease, opacity 0.15s ease;
+}
+
+.entry-content a:hover,
+.page-content a:hover {
+  border-bottom-color: currentColor;
+  opacity: 0.85;
+}

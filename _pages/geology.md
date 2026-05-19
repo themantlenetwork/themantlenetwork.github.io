@@ -1,8 +1,8 @@
 ---
 layout: page
-title: Geology
+title: Field geology
 image: /assets/images/cabo-ortegal.jpg
 permalink: /geology/
 ---
 
-Coming soon!
+{% include coming-soon.html community=page.title %}

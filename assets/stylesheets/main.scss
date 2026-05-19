@@ -1,75 +1,148 @@
 ---
 ---
- 
+
 @charset "utf-8";
 
 @import "basically-basic/themes/{{ site.data.theme.skin | default: 'default' }}";
 @import "basically-basic";
-
 @import "hero-slider";
 
-/* Neutralize first paragraph styles */
+/* ================================
+   Design tokens
+================================== */
+:root {
+  --space-xs: 0.5rem;
+  --space-sm: 1rem;
+  --space-md: 1.5rem;
+  --space-lg: 2.5rem;
+  --space-xl: 4rem;
+
+  --text-color: rgba(0, 0, 0, 0.85);
+  --link-color: rgba(0, 0, 0, 0.75);
+  --link-border: rgba(0, 0, 0, 0.25);
+}
+
+/* ================================
+   Layout cleanup
+================================== */
+
+.wrapper {
+  padding-bottom: 0;
+}
+
+.initial-content > *:last-child {
+  margin-bottom: 0;
+}
+
+/* keep header/logo unchanged width */
+.masthead .inner,
+.sidebar .inner,
+.footer .inner {
+  max-width: 1024px;
+  padding-left: var(--space-sm);
+  padding-right: var(--space-sm);
+}
+
+/* widen overall layout container */
+.initial-content .inner {
+  max-width: 1400px;
+  margin: 0 auto;
+}
+
+/* readable content width (important UX improvement) */
+.entry-content {
+  width: 100%;
+  max-width: 75ch;
+  margin: 0 auto;
+  color: var(--text-color);
+  line-height: 1.7;
+}
+
+/* ================================
+   Typography rhythm
+================================== */
+
+p {
+  margin-bottom: var(--space-md);
+}
+
+/* consistent vertical flow */
+.entry-content > * + * {
+  margin-top: var(--space-md);
+}
+
+/* ================================
+   First paragraph normalization
+================================== */
+
 .entry-content p:first-child,
 .entry-content p:first-of-type {
   font-size: inherit;
   font-weight: inherit;
 }
 
-/* Remove extra bottom space from main wrapper */
-.wrapper {
-  padding-bottom: 0;
+/* ================================
+   Links (modern subtle style)
+================================== */
+
+.entry-content a,
+.page-content a {
+  color: inherit;
+  text-decoration: none;
+  border-bottom: 1px solid var(--link-border);
+  transition: border-color 0.2s ease, opacity 0.2s ease, transform 0.2s ease;
 }
 
-/* Prevent last element in page content from adding extra margin */
-.initial-content > *:last-child {
-  margin-bottom: 0;
+.entry-content a:hover,
+.page-content a:hover {
+  border-bottom-color: rgba(0, 0, 0, 0.6);
+  opacity: 1;
+  transform: translateY(-1px);
 }
 
-/* keep header/logo unchanged */
-.masthead .inner,
-.sidebar .inner,
-.footer .inner {
-  max-width: 1024px;
+.entry-content a:focus-visible {
+  outline: 2px solid currentColor;
+  outline-offset: 2px;
 }
 
-/* widen and center the main page area */
-.initial-content .inner {
-  max-width: 1400px;
-  margin: 0 auto;
-}
+/* ================================
+   Hero / intro image
+================================== */
 
-/* make body use the full available width */
-.entry-content {
-  width: 100%;
-  max-width: 100%;
-  margin: 0 auto;
-}
-
-/* Default = narrower (applies everywhere) */
 .intro-image {
-  width: 100%; /* full width */
-  height: clamp(140px, 18vw, 260px); /* compact responsive height */
-  overflow: hidden; /* crop overflow */
+  width: 100%;
+  height: clamp(180px, 20vw, 320px);
+  overflow: hidden;
+  border-radius: 12px;
 }
 
 .intro-image img {
-  width: 100%; /* fill width */
-  height: 100%; /* match container height */
-  object-fit: cover; /* crop without distortion */
-  object-position: center 20%; /* focus slightly top */
-  display: block; /* remove inline gap */
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center 20%;
+  display: block;
+  transform: scale(1.02);
 }
 
+/* ================================
+   Button description block
+================================== */
+
 .button-description {
-  margin-bottom: 1.6rem;
+  margin-bottom: var(--space-lg);
 }
+
 .button-description p {
-  margin-top: 0.4rem;
+  margin-top: var(--space-xs);
   font-size: 0.95em;
   opacity: 0.75;
 }
 
-// Space after paragraphs
-p {
-  margin-bottom: 2em;
+/* ================================
+   Optional wrapper polish
+================================== */
+
+.wrapper {
+  min-height: 100vh;
 }

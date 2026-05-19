@@ -1,8 +1,8 @@
 ---
 layout: page
-title: Geochemistry & geochronology
+title: Marine geosciences
 image: /assets/images/clean-room.jpg
-permalink: /geochemistry/
+permalink: /marine/
 ---
 
 {% include coming-soon.html community=page.title %}

@@ -1,0 +1,41 @@
+<style>
+
+.page-content ul {
+  list-style: none;
+  padding-left: 0;
+  margin-left: 0;
+  margin-top: 0rem;
+  margin-bottom: 2rem;
+}
+
+.page-content ul li {
+  margin-bottom: 0.45rem;
+  line-height: 1.55;
+  font-size: 1rem;
+  color: inherit;
+  display: block;
+}
+
+.page-content ul li p {
+  margin: 0;
+}
+
+.page-content ul li::before {
+  content: "—";
+  color: rgba(0, 0, 0, 0.35);
+  margin-right: 0.6em;
+}
+
+.page-content h1 + ul,
+.page-content h2 + ul,
+.page-content h3 + ul {
+  margin-top: 0.5rem;
+}
+
+@media (max-width: 768px) {
+  .page-content ul li {
+    margin-bottom: 0.35rem;
+    line-height: 1.5;
+  }
+}
+</style>

@@ -1,8 +1,8 @@
 ---
 layout: page
-title: Petrology
+title: Experimental petrology & cristallography
 image: /assets/images/experimental-petrology.jpg
 permalink: /petrology/
 ---
 
-Coming soon!
+{% include coming-soon.html community=page.title %}

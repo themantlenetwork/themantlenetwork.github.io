@@ -1,8 +1,8 @@
 ---
 layout: page
-title: Geodynamics
+title: Computational geodynamics
 image: /assets/images/mantle-convection.jpg
 permalink: /geodynamics/
 ---
 
-Coming soon!
+{% include coming-soon.html community=page.title %}
