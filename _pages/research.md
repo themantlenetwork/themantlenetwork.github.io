@@ -60,7 +60,7 @@ Modern mantle science combines:
 - 🚢  [Marine geology](/marine/) — recovering dredged abyssal peridotites and drill cores from the ocean floor.
 - 🌋  [Volcanology](/volcanology/) — studying eruptions, lavas and mantle xenoliths hosted in basalts and kimberlites.
 - 🧪 [Geochemistry & geochronology](/geochemistry/) — analyzing elemental and isotopic compositions of rocks, minerals and fluids.
-- 🔬 [Geophysical & remote sensing](/geophysics/) — collecting seismic, gravity, magnetotellurics, conductivity and remote sensing data.
-- 🧑‍🔬 [Experimental petrology & crystallography](/petrology/) — studying mineral physics under mantle pressure and temperature conditions.
-- 🌍 [Computational geodynamics](/geodynamics/) — modelling physical and chemical transport processes.
+- 🔬 [Geophysical & remote sensing](/geophysics/) — collecting seismic, gravity, magnetic, conductivity and remote sensing data.
+- 🧑‍🔬 [Experimental petrology & crystallography](/petrology/) — exploring thermodynamic properties under mantle pressure and temperature conditions.
+- 🌍 [Computational geodynamics](/geodynamics/) — modelling deformation and transport processes through advanced numerical methods.
 

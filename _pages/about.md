@@ -9,10 +9,10 @@ The **MANTLE NETWORK Initiative** is an international collective of researchers,
 
 The goals of the initiative are to:
 - Bring together geologists, geodynamicists, geophysicists and the lava-side of the petro-geochemical world. 
-- Promote scientific communication, collaboration and knowledge sharing across the mantle research community. 
+- Promote scientific communication, collaboration and knowledge sharing across the mantle research communities. 
 - Ensure the involvement of students, early-career researchers (ECRs) and scientists from all regions of the world.
 
-The **MANTLE NETWORK Initiative** emerged during the Lherzolite Conference 2024 and EMAW 2025, and [mantlenetwork.org](https://mantlenetwork.org) was launched 2026. It aims to provide a showcase for mantle science and a hub for the community to host webinars and coordinate international meetings.
+The initiative emerged during the Lherzolite Conference 2024 and EMAW 2025, and [mantlenetwork.org](https://mantlenetwork.org) was launched 2026. It aims to showcase mantle science and serve as a hub for resources, webinars, and international meeting coordination.
 
 To learn more about our activites:
 

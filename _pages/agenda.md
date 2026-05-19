@@ -2,7 +2,6 @@
 layout: page
 title: Agenda
 permalink: /agenda/
-image: /assets/images/trinity_hero.jpg
 ---
 
 # MEREMA 3

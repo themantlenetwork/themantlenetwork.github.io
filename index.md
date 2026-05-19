@@ -8,6 +8,12 @@ slides:
     button_text: Learn more about the initiative
     button_url: /about
 
+  - image: /assets/images/mantle-convection.jpg
+    title: "Exploring our planet's interior"
+    text: "Researchers are revealing how the mantle drives Earth’s continuous internal reshaping and long-term evolution."
+    button_text: Learn more about mantle research
+    button_url: /research
+
   - image: /assets/images/mantle-illustration2.jpg
     title: "The mantle: 84% of our planet"
     text: "Beneath Earth’s thin crust lies a vast layer of silicate rock extending to about 2,900 km depth."
@@ -15,12 +21,6 @@ slides:
   - image: /assets/images/mantle-illustration.jpg
     title: "The Earth's engine"
     text: "Mantle convection drives plate tectonics and plays a central role in the physical and chemical evolution of our planet."
-
-  - image: /assets/images/mantle-convection.jpg
-    title: "Exploring our planet's interior"
-    text: "Researchers are revealing how the mantle drives Earth’s continuous internal reshaping and long-term evolution."
-    button_text: Learn more about mantle research
-    button_url: /research
 ---
 
 The **MANTLE NETWORK Initiative** is an international collective of scientists studying the Earth’s mantle.

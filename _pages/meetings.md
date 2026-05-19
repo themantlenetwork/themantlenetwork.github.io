@@ -1,7 +1,7 @@
 ---
 layout: page
 title: Meetings
-image: /assets/images/emaw2018_group.jpg
+image: /assets/images/emaw2018_hero.jpg
 permalink: /meetings/
 ---
 
@@ -22,3 +22,5 @@ to share the latest mantle research and connect scientists from around the world
   <a href="/merema" class="btn btn-merema">MEREMA School of mantle petrology</a>
   <p>A student-oriented summer school</p>
 </div>
+
+Check the [agenda](/agenda) to find upcoming meetings and other events.
