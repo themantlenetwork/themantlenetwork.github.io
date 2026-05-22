@@ -33,8 +33,6 @@ collections:
     output: true
     permalink: /:name/
 
-remote_theme: mmistakes/jekyll-theme-basically-basic
-
 plugins:
   - jekyll-remote-theme
   - jekyll-seo-tag

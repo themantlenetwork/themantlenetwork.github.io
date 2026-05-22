@@ -1,6 +1,3 @@
-# Theme Skin
-skin: default   # default, night, plum, sea, soft, steel
-
 # Navigation (main menu order)
 navigation_pages:
   - _pages/about.md

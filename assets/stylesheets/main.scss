@@ -3,9 +3,8 @@
 
 @charset "utf-8";
 
-@import "basically-basic/themes/{{ site.data.theme.skin | default: 'default' }}";
 @import "basically-basic";
-@import "hero-slider";
+@import "theme";
 
 /* ================================
    Design tokens
@@ -85,16 +84,16 @@ p {
    Links (modern subtle style)
 ================================== */
 
-.entry-content a,
-.page-content a {
+.entry-content a:not(.btn),
+.page-content a:not(.btn) {
   color: inherit;
   text-decoration: none;
   border-bottom: 1px solid var(--link-border);
   transition: border-color 0.2s ease, opacity 0.2s ease, transform 0.2s ease;
 }
 
-.entry-content a:hover,
-.page-content a:hover {
+.entry-content a:not(.btn):hover,
+.page-content a:not(.btn):hover {
   border-bottom-color: rgba(0, 0, 0, 0.6);
   opacity: 1;
   transform: translateY(-1px);
