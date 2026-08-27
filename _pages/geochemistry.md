@@ -1,7 +1,7 @@
 ---
 layout: page
 title: Geochemistry & geochronology
-image: /assets/images/clean-room.jpg
+image: /assets/images/jarmoluk-chemist-2815640.jpg
 permalink: /geochemistry/
 ---
 

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: Volcanology
-image: /assets/images/hawaii.jpg
+image: /assets/images/gylfi-volcano-7396466.jpg
 permalink: /volcanology/
 ---
 
