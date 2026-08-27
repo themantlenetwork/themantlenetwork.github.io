@@ -1,7 +1,7 @@
 ---
 layout: page
 title: Marine geosciences
-image: /assets/images/clean-room.jpg
+image: /assets/images/joides.jpg
 permalink: /marine/
 ---
 
