@@ -1,13 +1,33 @@
-/*!
-*/
+// Shared Sass functions used by the theme and its foundation styles.
+@import "theme/functions";
 
+// Design tokens: breakpoints, typography, colors, spacing, and component settings.
+@import "theme/variables";
+
+// Reusable mixins such as clearfix, list normalization, and text helpers.
+@import "theme/mixins";
+
+// Responsive breakpoint functions and configuration.
+@import "theme/vendor/breakpoint/breakpoint";
+@include breakpoint-set("to ems", true);
+
+// Susy grid functions used by the entry and page layouts.
+@import "theme/vendor/susy/susy";
+
+// Foundation styles shared across the whole site.
+@import "theme/reset";
+@import "theme/base";
+@import "theme/layout";
+@import "theme/tables";
+
+// Supporting styles for code blocks, embedded media, utilities, and printing.
+@import "theme/syntax-highlighting";
+@import "theme/responsive-embed";
+@import "theme/utilities";
+@import "theme/print";
+
+// Site-specific components and page-level styling.
 @import "theme/hero-slider";
-
-/*! From Basically Basic Jekyll Theme 1.4.5
- * Copyright 2017-2018 Michael Rose - mademistakes | @mmistakes
- * Free for personal and commercial use under the MIT license
- * https://github.com/mmistakes/jekyll-theme-basically-basic/blob/master/LICENSE
-*/
 @import "theme/global";
 @import "theme/sidebar";
 @import "theme/navigation";
@@ -18,5 +38,3 @@
 @import "theme/icons";
 @import "theme/intro";
 @import "theme/navicons";
-
-/*@import "basically-basic/contact-lists";*/
