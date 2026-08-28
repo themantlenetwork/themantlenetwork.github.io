@@ -12,12 +12,12 @@ slides:
     button_url: "/geology"
     credit: "Credit: Romain Tilhac / CNRS"
 
-  - image: /assets/images/joides.jpg
+  - image: /assets/images/nautile.jpg
     title: "Exploring the abyss"
     text: "Drilling and sampling the ocean floor to trace the oceanic conveyor belt."
     button_text: "Learn more about marine geosciences"
     button_url: "/marine"
-    credit: "Credit: William Crawford / IODP 274"
+    credit: "Credit: Georges Ceuleneer / CNRS"
     
   - image: /assets/images/gylfi-volcano-7396466.jpg
     title: "Sampling Earth's life blood"
