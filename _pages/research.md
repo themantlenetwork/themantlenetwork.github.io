@@ -14,7 +14,7 @@ slides:
 
   - image: /assets/images/nautile.jpg
     title: "Exploring the abyss"
-    text: "Drilling and sampling the ocean floor to trace the oceanic conveyor belt."
+    text: "Sampling the ocean floor to trace the oceanic conveyor belt."
     button_text: "Learn more about marine geosciences"
     button_url: "/marine"
     credit: "Credit: Georges Ceuleneer / CNRS"
