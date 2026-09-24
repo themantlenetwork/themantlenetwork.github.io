@@ -25,7 +25,7 @@ slides:
 
 The **MANTLE NETWORK Initiative** is an international collective of scientists studying the Earth’s mantle.
 
-Our activities include **free webinar series** and **international meetings** to promote scientific communication, collaboration, and knowledge sharing across the global mantle research community.
+Our activities include **free webinar series** and **international meetings** to promote scientific communication, collaboration, and knowledge sharing across mantle research communities.
 
 <a href="/meetings" class="btn btn-lherzolite">Meetings</a> <a href="/webinars" class="btn btn-webinars">Webinars</a>
 
