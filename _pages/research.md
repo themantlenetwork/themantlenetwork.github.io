@@ -71,3 +71,8 @@ Modern mantle science combines:
 - 🧑‍🔬 [Experimental petrology & crystallography](/petrology/) — exploring thermodynamic properties under mantle pressure and temperature conditions.
 - 🌍 [Computational geodynamics](/geodynamics/) — modelling deformation and transport processes through advanced numerical methods.
 
+---
+
+These pages are all work in progress. If you woud like to contribute, please [contact us](/contact).
+
+

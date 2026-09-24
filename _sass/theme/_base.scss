@@ -80,6 +80,21 @@ h6 {
   @include fluid-type($min-vw, $max-vw, $h6-min, $h6-max);
 }
 
+.highlight-box {
+  margin: 1.5rem 0;
+  padding: 1rem 1.5rem;
+  border-left: 4px solid $accent-color;
+  background-color: rgba(0, 0, 0, 0.04);
+}
+
+dt {
+  font-weight: bold;
+
+  &:not(:first-child) {
+    margin-top: 1rem;
+  }
+}
+
 dt {
   font-weight: bold;
 

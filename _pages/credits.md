@@ -17,9 +17,12 @@ This website was designed and developed by  [Romain Tilhac](https://romaintilhac
 - Mailing list powered by [LaPosta](https://www.laposta.nl/)
 
 ### Content
-- All scientific content, text, and materials are produced by The MANTLE NETWORK Initiative unless otherwise stated
-- Images and visual materials are either original or used with appropriate rights and attribution
+  All scientific content, text, and materials are produced by The MANTLE NETWORK Initiative unless otherwise stated. Images and visual materials are either original or used with appropriate rights and attribution
 
 ---
 
-If you believe any content is missing proper attribution or should be credited differently, please feel free to [contact us](/contact).
+This website and its associated activities are intended for scientific communication, collaboration and knowledge sharing. If you believe any content is missing proper attribution or should be credited differently, please [contact us](/contact).
+
+In the context of our activities, we only process personal data that is strictly necessary.
+
+

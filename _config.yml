@@ -20,7 +20,7 @@ logo: https://mantlenetwork.org/assets/images/logo.svg
 
 search: true
 search_full_content: true
-search_provider:
+search_provider: lunr
 
 algolia:
   application_id:

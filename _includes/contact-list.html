@@ -1,27 +1,37 @@
-<ul class="contact-list">
-  {% if site.email %}
-    <li>
-      <a href="mailto:{{ site.email }}">
-        <span class="icon icon--email">{% include icon-email.svg %}</span>
-        <span class="label">{{ site.data.theme.t.email | default: 'Email' }}</span>
-      </a>
-    </li>
-  {% endif %}
+<div class="contact-list">
 
-  {% if site.github_username %}
-    <li>{% include icon-github.html username=site.github_username label='GitHub' %}</li>
-  {% endif %}
+    <h3 class="contact-list__heading">Resources</h3>
 
-  {% if site.twitter_username %}
-    <li>{% include icon-twitter.html username=site.twitter_username label='Twitter' %}</li>
-  {% endif %}
+  <ul>
+    {% if site.github_username %}
+      <li>{% include icon-github.html username=site.github_username label='GitHub' %}</li>
+    {% endif %}
+
+    {% if site.twitter_username %}
+      <li>{% include icon-twitter.html username=site.twitter_username label='Twitter' %}</li>
+    {% endif %}
+
+    {% if site.plugins contains 'jekyll-feed' or site.gems contains 'jekyll-feed' %}
+      <li>
+        <a href="{{ site.feed.path | default: 'feed.xml' | relative_url }}" title="Atom Feed">
+          <span class="icon icon--rss">{% include icon-rss.svg %}</span>
+          <span class="label">{{ site.data.theme.t.subscribe | default: 'Subscribe' }}</span>
+        </a>
+      </li>
+    {% endif %}
+  </ul>
+
+  <h3 class="contact-list__heading">Partners</h3>
+
+  <ul>
 
   <li>
-    {% if site.plugins contains 'jekyll-feed' or site.gems contains 'jekyll-feed' %}
-      <a href="{{ site.feed.path | default: 'feed.xml' | relative_url }}" title="Atom Feed">
-        <span class="icon icon--rss">{% include icon-rss.svg %}</span>
-        <span class="label">{{ site.data.theme.t.subscribe | default: 'Subscribe' }}</span>
-      </a>
-    {% endif %}
+    <a href="https://ophiolite.org">ophiolite.org</a>
   </li>
-</ul>
+
+  <li>
+    <a href="https://serpentinedays.marum.de">SerpentineDays</a>
+  </li>
+
+  </ul>
+</div>

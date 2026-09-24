@@ -113,6 +113,16 @@
     margin-top: 0.5rem;
     padding-top: 0.5rem;
 
+  .contact-list__heading {
+    list-style: none;
+    margin-left: 0;
+    padding-left: 0;
+    font-weight: bold;
+    text-align: left;
+    transform: none;
+    opacity: 1;
+  }
+
     li:not(:last-child) {
       margin-bottom: 0.5rem;
     }

@@ -13,6 +13,8 @@ This is a living resource hub for researchers, students and professionals. We we
 
 ### 👥 Get involved
 
+We strongly encourage new initiatives.
+
 Interested in contributing or sharing resources? Question? Ideas?
 
 <a href="mailto:{{ site.email }}" class="btn icon-btn">

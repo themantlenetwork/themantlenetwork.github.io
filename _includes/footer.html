@@ -1,19 +1,16 @@
 <footer id="footer" class="site-footer">
   <div class="inner">
     <div class="copyright">
-      {% if site.copyright %}
-        <p>
+      <p>
+        Let’s stir the mantle research community!
+        | 
+        {% if site.copyright %}
           {{ site.copyright | markdownify | strip_html }}
-          | <a href="/credits">Credits</a>
-          | <a href="/disclaimer">Disclaimer</a>
-        </p>
-      {% else %}
-        <p>
+        {% else %}
           &copy; {{ site.time | date: '%Y' }} {{ site.title }}
-          | <a href="/credits">Credits</a>
-          | <a href="/disclaimer">Disclaimer</a>
-        </p>
-      {% endif %}
+        {% endif %}
+        | <a href="/credits">Credits</a>
+      </p>
     </div>
   </div>
 </footer>

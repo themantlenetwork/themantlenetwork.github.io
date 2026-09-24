@@ -1,18 +1,21 @@
 ---
 layout: page
 title: Orogenic Lherzolite conference
-image: /assets/images/trinity_hero.jpg
 permalink: /lherzolite/
 ---
 
-The International Orogenic Lherzolite Conference aims to unite specialists in mantle processes to key orogenic mantle peridotite (and related rocks) outcrops worldwide. The conference provides a platform to exchange knowledge and engage in discussions regarding the latest advancements in the processes occurring in the upper mantle and at the transition between the upper mantle and the lower crust. Contributions typically cover a wide range of topics, including melting processes, crustal recycling, significance of mafic lithologies, metasomatism, lithosphere evolution through rejuvenation and refertilization, supra-subduction fluid/melt/deformation processes, feedbacks between deformation and melt segregation/migration, field and experimental studies on mantle/lower crust rocks deformation, geophysical imaging of the Moho transition, mantle structures and flow, or mineral resources related to mantle rocks.
+The international **Orogenic Lherzolite Conference** aims to unite specialists in mantle processes to world-class orogenic mantle peridotite (and related rocks) outcrops.
+
+Contributions typically cover a wide range of topics, including melting processes, crustal recycling, significance of mafic lithologies, metasomatism, lithosphere evolution through rejuvenation and refertilization, supra-subduction fluid/melt/deformation processes, feedbacks between deformation and melt segregation/migration, field and experimental studies on mantle/lower crust rocks deformation, geophysical imaging of the Moho transition, mantle structures and flow, or mineral resources related to mantle rocks.
 
 <img src="{{ '/assets/images/lherzolite2024_group.jpg' | relative_url }}" class="align-center" alt="">
 *Group photo of the pre-conference fieldtrip of the Orogenic Lherzolite Conference 2024 in Cabo Ortegal.*
 
 ## History
 
-The first International Orogenic Lherzolite meeting was held in Montpellier (France) in 1990 around the Lherz peridotite outcrop in the French Pyrenees.
+The international**Orogenic Lherzolite Conference**  has been providing a platform to exchange knowledge and engage in discussions regarding the latest advancements in the processes occurring in the upper mantle and at the transition between the upper mantle and the lower crust. 
+
+The first meeting was held in Montpellier (France) in 1990 around the Lherz peridotite outcrop in the French Pyrenees.
 
 - **1990** - Montpellier (France) - Lherz peridotite in the French Pyrenees.
 
