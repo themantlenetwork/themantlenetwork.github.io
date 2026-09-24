@@ -21,14 +21,14 @@ slides:
     
   - image: /assets/images/gylfi-volcano-7396466.jpg
     title: "Sampling Earth's life blood"
-    text: "Studying eruptions and lavas to understand the deep plumbing of volcanic systems."
+    text: "Studying eruptions and lavas to understand the deep plumbing of magmatic systems."
     button_text: "Learn more about volcanology"
     button_url: "/volcanology"
     credit: "Credit: Gylfi Gylfason / Pixabay"
     
   - image: /assets/images/jarmoluk-chemist-2815640.jpg
     title: "Tracing chemical fingerprints"
-    text: "Analyzing mantle-derived materials to trace their origin and evolution and recycling."
+    text: "Analyzing mantle-derived materials to trace their origin and evolution."
     button_text: "Learn more about geochemistry"
     button_url: "/geochemistry"
     credit: "Credit: Michal Jarmoluk / Pixabay"
@@ -68,7 +68,7 @@ Modern mantle science combines:
 - 🌋  [Volcanology](/volcanology/) — studying eruptions, lavas and mantle xenoliths hosted in basalts and kimberlites.
 - 🧪 [Geochemistry & geochronology](/geochemistry/) — analyzing elemental and isotopic compositions of rocks, minerals and fluids.
 - 🔬 [Geophysical & remote sensing](/geophysics/) — collecting seismic, gravity, magnetic, conductivity and remote sensing data.
-- 🧑‍🔬 [Experimental petrology & crystallography](/petrology/) — exploring thermodynamic properties under mantle pressure and temperature conditions.
+- 🧑‍🔬 [Experimental petrology & crystallography](/petrology/) — exploring thermodynamic properties under mantle conditions.
 - 🌍 [Computational geodynamics](/geodynamics/) — modelling deformation and transport processes through advanced numerical methods.
 
 ---
