@@ -13,7 +13,7 @@ Contributions typically cover a wide range of topics, including melting processe
 
 ## History
 
-The international**Orogenic Lherzolite Conference**  has been providing a platform to exchange knowledge and engage in discussions regarding the latest advancements in the processes occurring in the upper mantle and at the transition between the upper mantle and the lower crust. 
+The international **Orogenic Lherzolite Conference**  has been providing a platform to exchange knowledge and engage in discussions regarding the latest advancements in the processes occurring in the upper mantle and at the transition between the upper mantle and the lower crust. 
 
 The first meeting was held in Montpellier (France) in 1990 around the Lherz peridotite outcrop in the French Pyrenees.
 
