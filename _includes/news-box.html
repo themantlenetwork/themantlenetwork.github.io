@@ -7,8 +7,17 @@
     {% assign news = site.posts | where: "news_id", include.news_id | first %}
 
     {% if news %}
-      <strong>{{ news.title }}</strong>
-      <p>{{ news.excerpt | strip_html }}</p>
+
+      {% if news.link %}
+        <strong><a href="{{ news.link }}">{{ news.title }}</a></strong>
+      {% else %}
+        <strong>{{ news.title }}</strong>
+      {% endif %}
+
+      <p>
+        {{ news.excerpt | strip_html }}
+      </p>
+
     {% endif %}
 
   {% else %}
@@ -16,12 +25,21 @@
     {% assign news = site.posts | sort: "date" | reverse %}
 
     {% for item in news limit:3 %}
-      <strong>{{ item.title }}</strong>
-      <p>{{ item.excerpt | strip_html }}</p>
+
+      {% if item.link %}
+        <strong><a href="{{ item.link }}">{{ item.title }}</a></strong>
+      {% else %}
+        <strong>{{ item.title }}</strong>
+      {% endif %}
+
+      <p>
+        {{ item.excerpt | strip_html }}
+      </p>
 
       {% unless forloop.last %}
         <br/>
       {% endunless %}
+
     {% endfor %}
 
   {% endif %}
