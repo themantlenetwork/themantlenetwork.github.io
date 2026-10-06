@@ -42,6 +42,13 @@
   }
 }
 
+.btn-agenda {
+  background-color: #65717c;
+
+  &:hover {
+    background-color: lighten(#65717c, 10%);
+  }
+}
 
 .btn-emaw {
   background-color: #e84a5f;
@@ -75,6 +82,13 @@
   }
 }
 
+.btn-archives {
+  background-color: #31506b;
+
+  &:hover {
+    background-color: lighten(#31506b, 10%);
+  }
+}
 
 .btn {
   display: inline-flex;

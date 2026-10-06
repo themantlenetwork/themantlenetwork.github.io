@@ -56,6 +56,16 @@ slides:
     credit: "Credit: Hans-Joachim Bungartz / SPPEXA"
 
 ---
+<div class="highlight-box wip-box">
+  <div class="highlight-label">🚧 WORK IN PROGRESS</div>
+  <strong>We welcome contributions to develop this community space.</strong>
+  <p>
+    This is a living resource hub for researchers, students and professionals.
+  </p>
+  <a href="mailto:{{ site.email }}" class="btn btn">
+    Get in touch →
+  </a>
+</div>
 
 # Understanding our living planet
 
@@ -71,8 +81,6 @@ Modern mantle science combines:
 - 🧑‍🔬 [Experimental petrology & crystallography](/petrology/) — exploring thermodynamic properties under mantle conditions.
 - 🌍 [Computational geodynamics](/geodynamics/) — modelling deformation and transport processes through advanced numerical methods.
 
----
 
-These pages are all work in progress. If you woud like to contribute, please [contact us](/contact).
 
 

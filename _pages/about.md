@@ -12,8 +12,10 @@ The goals of the initiative are to:
 - **Promote scientific communication**, collaboration and knowledge sharing across the mantle research communities. 
 - **Foster synergies** by involving students, early-career researchers, scientists and professionals from all regions of the world.
 
-The initiative emerged during the **Lherzolite Conference 2024** and **EMAW 2025**. [mantlenetwork.org](https://mantlenetwork.org) was launched in 2026 to showcase mantle science and serve as a hub for resources, webinars, and international meeting coordination.
+The initiative emerged during the **Lherzolite Conference 2024** and **EMAW 2025**. [mantlenetwork.org](https://mantlenetwork.org) was launched at **MEREMA 3** in 2026 to showcase mantle science and serve as a hub for resources, webinars, and international meeting coordination.
 
 To learn more about our activities:
 
-<a href="/meetings" class="btn btn-lherzolite">Meetings</a> <a href="/webinars" class="btn btn-webinars">Webinars</a>
+<a href="/meetings" class="btn btn-lherzolite">Meetings</a>
+<a href="/webinars" class="btn btn-webinars">Webinars</a> 
+<a href="https://laposta.nl/f/ssnjcseq7xt4" class="btn btn">Subscribe to the newsletter → </a>

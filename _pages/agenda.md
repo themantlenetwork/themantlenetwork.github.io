@@ -4,17 +4,6 @@ title: Agenda
 permalink: /agenda/
 ---
 
-# MEREMA 3
-
-**29 September - 2 October 2026 - Volterra (Tuscany)** <br>
-[https://sites.unimi.it/merema3/](https://sites.unimi.it/merema3/)
-
-The third edition of MEREMA (MElting and fluid/melt-rock REactions in the MAntle), the International School on Mantle Petrology will take place in the charming village of Volterra (Tuscany) located in the heart of the region, about sixty km southeast of Pisa.
-
-<img src="{{ 'assets/images/merema2026_flyer.jpg' | relative_url }}" class="align-center" alt="">
-
-The MEREMA 3<sup>rd</sup> Edition aims to assess the current state of knowledge on the structure, chemical composition, and dynamics of the Earth’s mantle as an integrated system, drawing on data from the different disciplines (petrology, geochemistry and geophysics).
-
 # 6<sup>th</sup> EMAW
 
 **5-9 July 2027 - Sopron (Hungary)**<br>

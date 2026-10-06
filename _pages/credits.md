@@ -10,6 +10,7 @@ This website was designed and developed by  [Romain Tilhac](https://romaintilhac
 ### Design & Development
 - Website built using [Jekyll](https://jekyllrb.com/)
 - Theme based on [Basically Basic Jekyll Theme](https://github.com/mmistakes/jekyll-theme-basically-basic) by Michael Rose
+- Vectorized logo by Anne Delplanque (Géosciences Montpellier)
 
 ### Hosting & Infrastructure
 - Hosted on [GitHub Pages](https://pages.github.com/)

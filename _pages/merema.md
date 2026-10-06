@@ -4,13 +4,7 @@ title: MEREMA
 permalink: /merema/
 ---
 
-<div class="highlight-box">
-  <a href="https://sites.unimi.it/merema3/">  <strong>📣 UPCOMING: MEREMA 3 — September 29<sup>th</sup>  – October 2<sup>nd</sup> 2027 · Volterra (Italy)</strong></a>
-</div>
-
-**MEREMA** (MElting and fluid/melt-rock REactions in the MAntle) is an international school of mantle petrology, covering theoretical, experimental, thermodynamic, geochemical and macro/microscopic study of mantle lithologies.
-
-The school is open to master degree and PhD students, and young researchers in Earth Sciences. The main themes will be approached by 
+**MEREMA** (MElting and fluid/melt-rock REactions in the MAntle) is an international school of mantle petrology, covering theoretical, experimental, thermodynamic, geochemical and macro/microscopic study of mantle lithologies. The school is open to master degree and PhD students, and young researchers in Earth Sciences.
 
 <img src="{{ 'assets/images/merema2026_flyer.jpg' | relative_url }}" class="align-center" alt="">
 *Flyer of the upcoming MEREMA 3 in Volterra.*
@@ -27,4 +21,3 @@ The first **MEREMA** was held in the historic lecture centre of the University o
 
 - **MEREMA 3** 29 September - 2 October - Volterra (Italy) 2026
 [Official page](https://sites.unimi.it/merema3/).
-

@@ -5,18 +5,11 @@ permalink: /contact/
 image: /assets/images/trinity_hero.jpg
 ---
 
-### Community-driven initiative
+### 💡Ideas? Question?
 
-This is a living resource hub for researchers, students and professionals. We welcome contributions from the community to help maintain this website.
+Interested in contributing or sharing resources? We encourage new initiatives from the community to help maintain this website.
 
----
-
-### 👥 Get involved
-
-We strongly encourage new initiatives.
-
-Interested in contributing or sharing resources? Question? Ideas?
-
-<a href="mailto:{{ site.email }}" class="btn icon-btn">
-  <span>Email us</span>
+<a href="mailto:{{ site.email }}" class="btn">
+  <span>Get in touch →</span>
 </a>
+
