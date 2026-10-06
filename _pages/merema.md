@@ -4,10 +4,12 @@ title: MEREMA
 permalink: /merema/
 ---
 
+{% include news-box.html news_id="merema-3" %}
+
 **MEREMA** (MElting and fluid/melt-rock REactions in the MAntle) is an international school of mantle petrology, covering theoretical, experimental, thermodynamic, geochemical and macro/microscopic study of mantle lithologies. The school is open to master degree and PhD students, and young researchers in Earth Sciences.
 
 <img src="{{ 'assets/images/merema2026_flyer.jpg' | relative_url }}" class="align-center" alt="">
-*Flyer of the upcoming MEREMA 3 in Volterra.*
+*Flyer of MEREMA 3 in Volterra.*
 
 ## History
 

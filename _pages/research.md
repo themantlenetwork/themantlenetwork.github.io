@@ -1,5 +1,5 @@
 ---
-layout: home-slider
+layout: page-slider
 image:
 title: Research
 permalink: /research/

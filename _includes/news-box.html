@@ -1,0 +1,29 @@
+<div class="highlight-box news-box">
+
+  <div class="highlight-label">LATEST NEWS</div>
+
+  {% if include.news_id %}
+
+    {% assign news = site.posts | where: "news_id", include.news_id | first %}
+
+    {% if news %}
+      <strong>{{ news.title }}</strong>
+      <p>{{ news.excerpt | strip_html }}</p>
+    {% endif %}
+
+  {% else %}
+
+    {% assign news = site.posts | sort: "date" | reverse %}
+
+    {% for item in news limit:3 %}
+      <strong>{{ item.title }}</strong>
+      <p>{{ item.excerpt | strip_html }}</p>
+
+      {% unless forloop.last %}
+        <br/>
+      {% endunless %}
+    {% endfor %}
+
+  {% endif %}
+
+</div>

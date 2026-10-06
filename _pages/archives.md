@@ -5,7 +5,7 @@ image: /assets/images/trinity_hero.jpg
 permalink: /archives/
 ---
 
-<div class="highlight-box webinar-box">
+<div class="highlight-box focus-box">
   <div class="highlight-label">📣 COMING IN 2027</div>
   <strong>Our first webinar series is coming in early 2027!</strong>
   <p>

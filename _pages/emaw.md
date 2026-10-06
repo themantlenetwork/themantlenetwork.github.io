@@ -4,14 +4,7 @@ title: Earth Mantle Workshop (EMAW)
 permalink: /emaw/
 ---
 
-<div class="highlight-box news-box">
-  <div class="highlight-label">📣 UPCOMING</div>
-  <strong>6<sup>th</sup> EMAW — July 5–9<sup>th</sup> 2027 · Sopron, Hungary</strong>
-  <p>
-    The 6<sup>th</sup> Earth Mantle Workshop will take place in Sopron, Hungary, in July 2027.
-    <a href="https://emaw2027.epss.hu/en">More information</a>
-  </p>
-</div>
+{% include news-box.html news_id="emaw-6" %}
 
 The **Earth Mantle Workshop (EMAW)** aims at providing a global framework of advanced knowledge on the evolution of the Earth's mantle, accessible for early-career researchers and students.
 

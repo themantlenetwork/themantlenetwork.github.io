@@ -16,6 +16,6 @@ The initiative emerged during the **Lherzolite Conference 2024** and **EMAW 2025
 
 To learn more about our activities:
 
-<a href="/meetings" class="btn btn-lherzolite">Meetings</a>
+<a href="/meetings" class="btn btn-meetings">Meetings</a>
 <a href="/webinars" class="btn btn-webinars">Webinars</a> 
 <a href="https://laposta.nl/f/ssnjcseq7xt4" class="btn btn">Subscribe to the newsletter → </a>

@@ -22,30 +22,12 @@ slides:
     title: "The Earth's engine"
     text: "Mantle convection drives plate tectonics and plays a central role in the physical and chemical evolution of our planet."
 ---
-<div class="highlight-box news-box">
-  <div class="highlight-label">LATEST NEWS</div>
-  <strong>👏 MEREMA 3 was a success!</strong>
-  <p>
-    The third edition of MEREMA took place in the charming village of Volterra,
-    in the heart of Tuscany. It was a great event — many thanks to all the
-    organizers and participants!
-  </p>
-</div>
 
 The **MANTLE NETWORK Initiative** is an international collective of scientists studying the Earth’s mantle.
 
 Our activities include **free webinar series** and **international meetings** to promote scientific communication, collaboration, and knowledge sharing across mantle research communities.
 
-<a href="/meetings" class="btn btn-lherzolite">Meetings</a>
+<a href="/meetings" class="btn btn-meetings">Meetings</a>
 <a href="/webinars" class="btn btn-webinars">Webinars</a>
 
-<div class="highlight-box webinar-box">
-  <div class="highlight-label">✨ COMING IN 2027</div>
-  <strong>Our first webinar series is coming in early 2027!</strong>
-  <p>
-    Stay tuned for the programme and upcoming announcements.
-  </p>
-  <a href="https://laposta.nl/f/ssnjcseq7xt4" class="btn btn">
-    Subscribe to the newsletter →
-  </a>
-</div>
+{% include webinars-2027.html%}
