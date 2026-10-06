@@ -1,7 +1,7 @@
 ---
 layout: page
 title: Meet the speakers
-image: /assets/images/trinity_hero.jpg
+image: /assets/images/san-carlos.jpg
 permalink: /speakers/
 ---
 
