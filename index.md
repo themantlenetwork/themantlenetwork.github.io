@@ -1,5 +1,5 @@
 ---
-layout: home-slider
+layout: home-slider-news-box
 slider_ratio: 16/5
 slides:
   - image: /assets/images/trinity_hero.jpg

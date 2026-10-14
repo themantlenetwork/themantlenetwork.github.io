@@ -1,5 +1,5 @@
 ---
-layout: page
+layout: page-agenda-box
 title: Meetings
 image: /assets/images/emaw2018_hero.jpg
 permalink: /meetings/
@@ -21,7 +21,3 @@ The **MANTLE NETWORK Initiative** coordinates several international meetings to 
   <a href="/merema" class="btn btn-merema">MEREMA School of mantle petrology</a>
   <p>A student-oriented summer school</p>
 </div>
-
----
-
-{% include link-agenda.html%}

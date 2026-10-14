@@ -1,5 +1,5 @@
 ---
-layout: page
+layout: page-agenda-box
 title: Webinars
 permalink: /webinars/
 image: /assets/images/san-carlos.jpg
@@ -11,7 +11,5 @@ The **MANTLE NETWORK Initiative** offers free webinar series for researchers, st
 <a href="/speakers" class="btn btn-webinars">Meet the speakers</a>
 
 ---
-
-{% include link-agenda.html%}
 
 {% include webinars-2027.html%}
