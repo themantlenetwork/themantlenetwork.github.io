@@ -5,7 +5,7 @@ permalink: /credits/
 image: /assets/images/trinity_hero.jpg
 ---
 
-This website was designed and developed by  [Romain Tilhac](https://romaintilhac.github.io) (CNRS, Géosciences Montpellier) for The MANTLE NETWORK Initiative.
+This website was designed and developed by  [Romain Tilhac](https://romaintilhac.github.io) (CNRS, Géosciences Montpellier) for the **MANTLE NETWORK Initiative**.
 
 ### Design & Development
 - Website built using [Jekyll](https://jekyllrb.com/)
@@ -18,7 +18,7 @@ This website was designed and developed by  [Romain Tilhac](https://romaintilhac
 - Mailing list powered by [LaPosta](https://www.laposta.nl/)
 
 ### Content
-  All scientific content, text, and materials are produced by The MANTLE NETWORK Initiative unless otherwise stated. Images and visual materials are either original or used with appropriate rights and attribution
+  All scientific content, text, and materials are produced by the **MANTLE NETWORK Initiative** unless otherwise stated. Images and visual materials are either original or used with appropriate rights and attribution
 
 ---
 
