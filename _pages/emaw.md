@@ -23,7 +23,7 @@ The first meeting was held in Ferrara (Italy) in 2007, organized by M. Coltorti 
 
 - **3<sup>rd</sup> EMAW** 26 - 28 June 2018 - Pavia (Italy)  [Official page](http://emaw2018iggpavia.unipv.it) [Abstract book](https://www.socminpet.it/dwl.php?file=files/download/vol-44/EMAW2018.pdf).
 
-- **4<sup>th</sup> EMAW** 30 June - 2July Toulouse (France) [Program page](https://sfmc-fr.org/wp-content/uploads/EMAW2021-3rd-circular.pdf). 
+- **4<sup>th</sup> EMAW** 11 - 14 October 2021 - Toulouse (France) [Program page](https://sfmc-fr.org/wp-content/uploads/EMAW2021-3rd-circular.pdf). 
 
 - **5<sup>th</sup> EMAW** 13 - 16 July 2025 - Vienna (Austria) [Abstract book](/resources/EMAW25_abstract-book.pdf).
 
