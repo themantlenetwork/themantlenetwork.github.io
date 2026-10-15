@@ -10,7 +10,7 @@ slides:
 
   - image: /assets/images/mantle-convection.jpg
     title: "Exploring our planet's interior"
-    text: "Researchers are revealing how the mantle drives Earth’s reshaping."
+    text: "Researchers are revealing how the mantle drives Earth’s continuous reshaping."
     button_text: Learn more about mantle research
     button_url: /research
 
