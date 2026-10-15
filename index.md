@@ -10,7 +10,7 @@ slides:
 
   - image: /assets/images/mantle-convection.jpg
     title: "Exploring our planet's interior"
-    text: "Researchers are revealing how the mantle drives Earth’s continuous internal reshaping and long-term evolution."
+    text: "Researchers are revealing how the mantle drives Earth’s reshaping."
     button_text: Learn more about mantle research
     button_url: /research
 
@@ -20,7 +20,7 @@ slides:
 
   - image: /assets/images/mantle-illustration.jpg
     title: "The Earth's engine"
-    text: "Mantle convection drives plate tectonics and plays a central role in the physical and chemical evolution of our planet."
+    text: "Mantle convection drives plate tectonics and plays a central role in the evolution of our planet."
 ---
 
 The **MANTLE NETWORK Initiative** is an international collective of scientists studying the Earth’s mantle.
