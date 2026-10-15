@@ -4,6 +4,6 @@ title: Scientific committee
 permalink: /committee/
 ---
 
-The **MANTLE NETWORK Initiative** is supported by an international scientific committee bringing together expertise in mantle petrology, geochemistry, geodynamics and numerical modelling.
+The **MANTLE NETWORK Initiative** is supported by an international scientific committee reflecting the diversity of our community in terms of gender, career stage, geographical region and scientific discipline.
 
-{% include interactive-map.html %}
+{% include committee-map.html %}
