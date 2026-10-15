@@ -11,7 +11,7 @@ permalink: /speakers/
   <p>
     Stay tuned for the programme and upcoming announcements.
   </p>
-  <a href="https://laposta.nl/f/ssnjcseq7xt4" class="btn btn">
+  <a href="{{ site.forms.newsletter }}" class="btn btn">
     Subscribe to the newsletter →
   </a>
 </div>

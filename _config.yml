@@ -14,6 +14,10 @@ author:
   twitter:
   picture: 
 
+forms:
+  newsletter: "/subscribe/"
+  scientific_committee: "/join-scientific-committee/"
+
 twitter_username:
 github_username: themantlenetwork
 logo: https://mantlenetwork.org/assets/images/logo.svg
