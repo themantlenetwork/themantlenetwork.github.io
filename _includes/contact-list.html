@@ -3,12 +3,17 @@
     <h3 class="contact-list__heading">Resources</h3>
 
   <ul>
+
+    {% if site.linkedin_url %}
+      {% include icon/icon-linkedin.html url=site.linkedin_url label='LinkedIn' %}</li>
+    {% endif %}
+
     {% if site.github_username %}
-      <li>{% include icon/icon-github.html username=site.github_username label='GitHub' %}</li>
+      {% include icon/icon-github.html username=site.github_username label='GitHub' %}</li>
     {% endif %}
 
     {% if site.twitter_username %}
-      <li>{% include icon/icon-twitter.html username=site.twitter_username label='Twitter' %}</li>
+      {% include icon/icon-twitter.html username=site.twitter_username label='Twitter' %}</li>
     {% endif %}
 
     {% if site.plugins contains 'jekyll-feed' or site.gems contains 'jekyll-feed' %}
