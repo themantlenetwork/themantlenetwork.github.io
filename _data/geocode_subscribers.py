@@ -128,6 +128,10 @@ def norm(value):
     value = "".join(ch for ch in value if not unicodedata.combining(ch))
     return " ".join(re.sub(r"[^\w\s]", " ", value, flags=re.UNICODE).split())
 
+def title_case_words(value):
+    """Capitalize each word while preventing all-uppercase words."""
+    return " ".join(word.capitalize() for word in plain(value).split())
+
 def load_country_reference(path):
     names, canonical = {}, {}
     if not path or not Path(path).exists():
@@ -258,15 +262,24 @@ def standardize_keywords(value, mapping):
                     matched_targets.append(target)
                 remainder = re.sub(pattern, " ", remainder)
 
+        remainder = re.sub(r"\b(and|or|of|the|in|for|with|on|and|related to)\b", " ", remainder)
+        remainder = " ".join(remainder.split()).strip(" -/:,")
+
+        if matched_targets and len(remainder) > 2:
+            # Keep compound concepts intact (e.g. "computational geochemistry")
+            # instead of reducing them to an isolated modifier ("computational").
+            cleaned = title_case_words(term)
+            if cleaned not in unknown and cleaned not in found:
+                unknown.append(cleaned)
+            continue
+
         for target in matched_targets:
             if target not in found:
                 found.append(target)
 
-        remainder = re.sub(r"\b(and|or|of|the|in|for|with|on|and|related to)\b", " ", remainder)
-        remainder = " ".join(remainder.split()).strip(" -/:,")
         if len(remainder) > 2:
             # Preserve unknown scientific concepts in readable form for review.
-            cleaned = " ".join(word.capitalize() for word in remainder.split())
+            cleaned = title_case_words(remainder)
             if cleaned not in unknown and cleaned not in found:
                 unknown.append(cleaned)
 
@@ -281,7 +294,7 @@ def standardize_keywords(value, mapping):
     seen = set()
     for term in found:
         key = norm(term)
-        canonical = mapping.get(key, term)
+        canonical = title_case_words(mapping.get(key, term))
         canonical_key = norm(canonical)
         if canonical_key not in seen:
             deduplicated.append(canonical)
@@ -292,7 +305,7 @@ def standardize_keywords(value, mapping):
     for term in unknown:
         key = norm(term)
         if key not in seen_unknown:
-            deduplicated_unknown.append(term)
+            deduplicated_unknown.append(title_case_words(term))
             seen_unknown.add(key)
 
     return deduplicated, deduplicated_unknown
@@ -369,7 +382,7 @@ def main():
     for row in rows:
         first = get(row, "First name", "first_name")
         last = get(row, "Last name", "last_name")
-        name = get(row, "Name", "name") or " ".join(x for x in (first, last) if x)
+        name = title_case_words(get(row, "Name", "name") or " ".join(x for x in (first, last) if x))
         email = get(row, "Email", "email").casefold()
         institution = get(row, "Institution", "institution")
         city_input = get(row, "City", "city")

@@ -1,26 +1,32 @@
 name,institution,country,latitude,longitude,map_x,map_y,research_areas,profile_url
-Abderrahmane Bendaoud,"Laboratory of Geodynamics, Engineering geology and planetology, University of Science and Technology Houari Boumediene",Algeria,36.73225,3.08746,609.56,168.69,Petrology; Geochemistry; Geodynamics; Lithosphere mapping,
-Andrea Giuliani,"Carnegie Institution for Science - Washington, DC",United States,38.89511,-77.03637,363.43,160.38,Mineral resources; Petrology; Geochemistry; Geochronology,https://carnegiescience.edu/bio/dr-andrea-giuliani
+Abderrahmane Bendaoud,"Laboratory of Geodynamics, Engineering geology and planetology, University of Science and Technology Houari Boumediene",Algeria,36.73225,3.08746,609.56,168.69,Petrology; Geochemistry; Geodynamics; Lithosphere Mapping,
+Andrea Giuliani,"Carnegie Institution for Science - Washington, DC",United States,38.89511,-77.03637,363.43,160.38,Mineral Resources; Petrology; Geochemistry; Geochronology,https://carnegiescience.edu/bio/dr-andrea-giuliani
 Norikatsu Akizawa,Hiroshima University,Japan,34.40861,132.73682,1014.82,177.64,Petrology; Geochemistry,https://researchmap.jp/akizawa?lang=en
 Alessandra Montanini,University of Parma,Italy,44.79935,10.32618,630.85,137.87,Petrology; Geochemistry,
-Alessio Sanfilippo,University of Pavia,Italy,45.19205,9.15917,627.31,136.39,Abyssal peridotites; Geochemistry; Petrology; Melt extraction; Isotope geochemistry,
-Arianna Secchiari,University of Milan,Italy,45.46427,9.18951,627.36,135.36,Experimental petrology; Petrology,https://www.researchgate.net/profile/Arianna-Secchiari?ev=hdr_xprf
+Alessio Sanfilippo,University of Pavia,Italy,45.19205,9.15917,627.31,136.39,Abyssal Peridotites; Geochemistry; Petrology; Melt Extraction; Isotope Geochemistry,
+Arianna Secchiari,University of Milan,Italy,45.46427,9.18951,627.36,135.36,Experimental Petrology; Petrology,https://www.researchgate.net/profile/Arianna-Secchiari?ev=hdr_xprf
 Ashutosh Pandey,Indian Institute of Science Education and Research (IISER),India,8.48550,76.94924,854.07,277.47,Petrology; Geochemistry,https://www.iisertvm.ac.in/faculty/ashutp
 Catharina Heckel,University of Münster,Germany,51.96236,7.62571,621.88,111.13,Petrology; Geochemistry,
 Csaba Szabo,"Lithosphere Fluid Research Lab, Institute of Geography and Earth Sciences, Eotvos University",Hungary,47.49835,19.04045,656.08,127.71,Geochemistry; Petrology,
 Eric Hellebrand,Utrecht University,Netherlands,52.09083,5.12222,614.68,110.66,Petrology; Microanalysis,
 Elisabetta Rampone,"Department of Earth, Environment and Life Science (DISTAV) - University of Genoa (Italy)",Italy,44.40478,8.94439,626.78,139.37,Geochemistry; Petrology,https://rubrica.unige.it/personale/VUZBWVpu
-Giulio Borghini,Università degli Studi di Milano,Italy,45.46427,9.18951,627.36,135.36,Petrology; Experimental petrology; Geochemistry,https://www.unimi.it/en/ugov/person/giulio-borghini
-Javier Fullea,Universidad Complutense de Madrid (UCM),Spain,40.41650,-3.70256,588.70,154.56,Geophysical modelling,
+Giulio Borghini,Università degli Studi di Milano,Italy,45.46427,9.18951,627.36,135.36,Petrology; Experimental Petrology; Geochemistry,https://www.unimi.it/en/ugov/person/giulio-borghini
+Jacek Puziewicz,University of Wroclaw,Poland,51.10286,17.03006,649.12,114.30,Petrology; Mantle Xenoliths,
+Javier Fullea,Universidad Complutense de Madrid (UCM),Spain,40.41650,-3.70256,588.70,154.56,Geophysical Modelling,
 Luc Doucet,Curtin University,Australia,-31.95224,115.86140,965.16,432.89,Petrology; Geochemistry; Geodynamics,https://geodynamics.curtin.edu.au
-Maria Varas Reus,University of Chile,Chile,-33.45694,-70.64827,378.47,438.69,Isotope geochemistry; Geochemistry,https://www.mariavarasreus.com/
+Maurizio Mazzucchelli,Dipartimento di Scienze Chimiche e Geologiche - Università di Modena e Reggio Emilia,Italy,44.64783,10.92539,632.67,138.45,Petrology And Geochemistry Of Mantle And Lower Crust,https://unimore.unifind.cineca.it/get/person/014255
+Maria Varas Reus,University of Chile,Chile,-33.45694,-70.64827,378.47,438.69,Isotope Geochemistry; Geochemistry,https://www.mariavarasreus.com/
 Michel Grégoire,French National Center for Scientific Research (CNRS),France,43.60426,1.44367,604.34,142.40,Petrology,
-Olivier ALARD,The Australian National University,Australia,-35.28346,149.12807,1064.56,445.73,Geochemistry; Petrology,https://earthsciences.anu.edu.au/people/professor-olivier-alard
+Nicholas Dygert,University of Tennessee,United States,35.96064,-83.92074,339.24,171.66,Petrology; Geochemistry; Experimental Petrology; Rheology; Numerical Modeling; Planetary Interiors,https://dygert.utk.edu
+Oded Elazar,Carnegie science,United States,38.89511,-77.03637,363.43,160.38,Geochemistry,
+Olivier Alard,The Australian National University,Australia,-35.28346,149.12807,1064.56,445.73,Geochemistry; Petrology,https://earthsciences.anu.edu.au/people/professor-olivier-alard
 Levente Patko,HUN-REN Institute of Earth Physics and Space Science,Hungary,47.68501,16.59049,648.82,127.01,Geochemistry,https://epss.hun-ren.hu/en/staff:patko.levente
-Romain Tilhac,CNRS Géosciences Montpellier,France,43.61093,3.87635,611.65,142.38,Petrology; Geochemistry,https://romaintilhac.github.io
-Sierd Cloetingh,"Utrecht University, Department of Earth Sciences",Netherlands,52.09083,5.12222,614.68,110.66,Geophysics; Lithosphere; Solid Earth; Tectonics; Plume Interaction; Dynamics; Subduction Initiation; Intraplate Deformation; Sedimentary Basin Evolution; Sea Level Change,https://www.uu.nl/staff/SAPLCloetingh
+Patrizia Fumagalli,University of Milan,Italy,45.46427,9.18951,627.36,135.36,Experimental Petrology,
+Romain Tilhac,CNRS Géosciences Montpellier,France,43.61093,3.87635,611.65,142.38,Petrology; Geochemistry; Isotope Geochemistry; Computational Geochemistry,https://romaintilhac.github.io
+Sierd Cloetingh,"Utrecht University, Department of Earth Sciences",Netherlands,52.09083,5.12222,614.68,110.66,Solid Earth Geophysics; Tectonics; Plume-lithosphere Interaction; Lithospheric Dynamics; Subduction Initiation; Intraplate Deformation; Sedimentary Basin Evolution; Sea Level Change,https://www.uu.nl/staff/SAPLCloetingh
 Sally Gibson,University of Cambridge,United Kingdom,52.20000,0.11667,600.33,110.26,Petrology; Geochemistry; Geodynamics,https://www.esc.cam.ac.uk/people/sally-gibson
-Stamatis Flemetakis,ETH Zürich,Switzerland,47.36667,8.55000,625.20,128.20,Petrology; Experimental petrology; Geochemistry,https://eaps.ethz.ch/en/people/profile.stamatis-flemetakis.html
+Sarah Lambart,University of Utah,United States,40.76078,-111.89105,259.17,153.24,Experimental Petrology; High Temperature Geochemistry,http://sarahlambart.com/index.html
+Stamatis Flemetakis,ETH Zürich,Switzerland,47.36667,8.55000,625.20,128.20,Petrology; Experimental Petrology; Geochemistry,https://eaps.ethz.ch/en/people/profile.stamatis-flemetakis.html
 Jessica Warren,University of Delaware,United States,40.73566,-74.17237,374.04,153.33,Petrology; Geochemistry; Rheology,https://www.jessicamwarren.com/
-Qing Xiong,China University of Geosciences (Wuhan),China,30.58333,114.26667,961.72,192.39,Petrology; Geochemistry; Orogenic peridotites; Ophiolites; Mineral resources; Serpentinization and carbonation,
+Qing Xiong,China University of Geosciences (Wuhan),China,30.58333,114.26667,961.72,192.39,Petrology; Geochemistry; Orogenic Peridotites; Ophiolites; Mineral Resources; Serpentinization And Carbonation,
 Yannick Bussweiler,"Institute of Geology and Mineralogy, University of Cologne",Germany,50.93333,6.95000,620.07,114.92,Petrology; Mineralogy; Geochemistry,https://geologie.uni-koeln.de/arbeitsgruppen/geo-kosmochemie/team/dr-yannick-bussweiler
