@@ -24,4 +24,4 @@ Founded by [Romain Tilhac](https://romaintilhac.github.io) (CNRS, Géosciences M
 <a href="/meetings" class="btn btn-meetings">🗓️ Meetings</a>
 <a href="/webinars" class="btn btn-webinars">🎙️ Webinars</a>
 
-{% include webinars-2027.html %}
+{% include highlight.html %}

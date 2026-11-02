@@ -30,4 +30,4 @@ Our activities include **free webinar series** and **international meetings** to
 <a href="/meetings" class="btn btn-meetings">🗓️ Meetings</a>
 <a href="/webinars" class="btn btn-webinars">🎙️ Webinars</a>
 
-{% include webinars-2027.html%}
+{% include highlight.html%}

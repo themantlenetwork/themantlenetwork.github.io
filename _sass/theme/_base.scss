@@ -225,3 +225,20 @@ a {
 //   outline: none;
 //   box-shadow: 0 0 10px $accent-color;
 // }
+
+/* Agenda events */
+
+.agenda-event {
+  margin-bottom: 2rem;
+}
+
+.agenda-event-banner {
+  margin: 1rem 0 1.5rem;
+}
+
+.agenda-event-banner img {
+  display: block;
+  width: 100%;
+  height: auto;
+  border-radius: 4px;
+}

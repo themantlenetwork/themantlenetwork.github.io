@@ -1,3 +1,4 @@
+
 <div class="highlight-box hero-box">
 
   <div class="highlight-label">📣 LATEST NEWS</div>
@@ -22,18 +23,42 @@
 
   {% else %}
 
-    {% assign news = site.posts | sort: "date" | reverse %}
+    {% assign today = site.time | date: "%Y%m%d" | plus: 0 %}
+    {% assign news_posts = site.posts %}
+    {% assign promoted_events = "" | split: "" %}
 
-    {% for item in news limit:3 %}
+    {% for event in site.events %}
+      {% if event.news == true %}
+        {% assign event_end = event.end_date | default: event.event_date | date: "%Y%m%d" | plus: 0 %}
 
-      {% if item.link %}
+        {% if event_end >= today %}
+          {% assign promoted_events = promoted_events | push: event %}
+        {% endif %}
+      {% endif %}
+    {% endfor %}
+
+    {% assign all_news = news_posts | concat: promoted_events | sort: "date" | reverse %}
+
+    {% for item in all_news limit:3 %}
+
+      {% if item.event_id %}
+        <strong>
+          <a href="{{ '/agenda/#' | append: item.event_id | relative_url }}">
+            {{ item.title }}
+          </a>
+        </strong>
+      {% elsif item.link %}
         <strong><a href="{{ item.link }}">{{ item.title }}</a></strong>
       {% else %}
         <strong>{{ item.title }}</strong>
       {% endif %}
 
       <p>
-        {{ item.excerpt | strip_html }}
+        {% if item.excerpt %}
+          {{ item.excerpt | strip_html }}
+        {% else %}
+          {{ item.content | strip_html | truncatewords: 40 }}
+        {% endif %}
       </p>
 
       {% unless forloop.last %}

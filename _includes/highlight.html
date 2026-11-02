@@ -1,0 +1,25 @@
+
+{% assign highlights = site.highlights | sort: "date" | reverse %}
+{% assign highlight = highlights | first %}
+
+{% if highlight %}
+
+<div class="highlight-box focus-box">
+
+  <div class="highlight-label">✨ HIGHLIGHT</div>
+
+  <strong>{{ highlight.title }}</strong>
+
+  <p>
+    {{ highlight.excerpt | strip_html }}
+  </p>
+
+  {% if highlight.link %}
+    <a href="{{ highlight.link }}" class="btn">
+      {{ highlight.link_text | default: "More information →" }}
+    </a>
+  {% endif %}
+
+</div>
+
+{% endif %}

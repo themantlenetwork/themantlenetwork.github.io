@@ -39,6 +39,10 @@ collections:
   pages:
     output: true
     permalink: /:name/
+  events:
+    output: false
+  highlights:
+    output: false
 
 plugins:
   - jekyll-seo-tag

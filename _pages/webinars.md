@@ -12,4 +12,4 @@ The **MANTLE NETWORK Initiative** offers free webinar series for researchers, st
 
 ---
 
-{% include webinars-2027.html%}
+{% include highlight.html%}

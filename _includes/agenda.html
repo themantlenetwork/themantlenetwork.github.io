@@ -1,0 +1,52 @@
+
+{% assign events = site.events | sort: "event_date" %}
+{% assign today = site.time | date: "%Y%m%d" | plus: 0 %}
+{% assign shown_event = false %}
+
+{% for event in events %}
+{% assign event_end = event.end_date | default: event.event_date | date: "%Y%m%d" | plus: 0 %}
+
+{% if event_end >= today %}
+
+{% if shown_event %}
+<hr>
+{% endif %}
+
+<div class="agenda-event" id="{{ event.event_id }}">
+
+{% if event.banner %}
+<div class="agenda-event-banner">
+<img src="{{ '/assets/images/events/' | append: event.banner | relative_url }}" alt="{{ event.title }}">
+</div>
+{% endif %}
+
+<h2>{{ event.title }}</h2>
+
+<p>
+<strong>
+{{ event.event_date | date: "%-d %B %Y" }}
+{% if event.end_date %}
+– {{ event.end_date | date: "%-d %B %Y" }}
+{% endif %}
+{% if event.location %}
+· {{ event.location }}
+{% endif %}
+</strong>
+</p>
+
+<div class="agenda-event-content">
+{{ event.content | markdownify }}
+</div>
+
+{% if event.link %}
+<p class="agenda-event-link">
+<a href="{{ event.link }}" target="_blank" rel="noopener">More information →</a>
+</p>
+{% endif %}
+
+</div>
+
+{% assign shown_event = true %}
+
+{% endif %}
+{% endfor %}
