@@ -27,7 +27,7 @@ The **MANTLE NETWORK Initiative** is an international collective of scientists s
 
 Our activities include **free webinar series** and **international meetings** to promote scientific communication, collaboration, and knowledge sharing across mantle research communities.
 
-<a href="/meetings" class="btn btn-meetings">Meetings</a>
-<a href="/webinars" class="btn btn-webinars">Webinars</a>
+<a href="/meetings" class="btn btn-meetings">🗓️ Meetings</a>
+<a href="/webinars" class="btn btn-webinars">🎙️ Webinars</a>
 
 {% include webinars-2027.html%}

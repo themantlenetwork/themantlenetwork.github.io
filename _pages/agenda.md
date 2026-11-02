@@ -2,6 +2,7 @@
 layout: page
 title: Agenda
 permalink: /agenda/
+image: /assets/images/trinity_hero.jpg
 ---
 
 # 6<sup>th</sup> EMAW

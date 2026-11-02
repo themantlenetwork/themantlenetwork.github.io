@@ -1,0 +1,26 @@
+---
+layout: page
+title: About
+permalink: /about/
+image: /assets/images/trinity_hero.jpg
+---
+
+The **MANTLE NETWORK Initiative** is an international collective of researchers, students and profesionnals dedicated to advancing our understanding of the Earth’s mantle and related planetary processes.
+
+The goals of the initiative are to:
+- **Connect communities**, from geologists to geodynamicists, geophysicists, petrologists and geochemists — including the lava-side of the community.
+- **Promote scientific communication**, collaboration and knowledge sharing across the mantle research communities. 
+- **Foster synergies** by involving students, early-career researchers, scientists and professionals from all regions of the world.
+
+The initiative progressively emerged during the **Lherzolite Conference 2024** and **EMAW 2025**.
+
+Founded by [Romain Tilhac](https://romaintilhac.github.io) (CNRS, Géosciences Montpellier) in 2026, [mantlenetwork.org](https://mantlenetwork.org) was launched at **MEREMA 3** to showcase mantle science and serve as a hub for resources, webinars and meetings coordination.
+
+The initiative is supported by an international [**Scientific Committee**](/committee), bringing together researchers from across the mantle science community and representing a diversity of geographical regions, scientific disciplines and career stages.
+
+To learn more about our activities:
+
+<a href="/meetings" class="btn btn-meetings">Meetings</a>
+<a href="/webinars" class="btn btn-webinars">Webinars</a>
+
+{% include webinars-2027.html%}

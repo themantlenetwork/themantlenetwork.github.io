@@ -383,6 +383,7 @@ def main():
         first = get(row, "First name", "first_name")
         last = get(row, "Last name", "last_name")
         name = title_case_words(get(row, "Name", "name") or " ".join(x for x in (first, last) if x))
+        sort_last_name = title_case_words(last or (name.split()[-1] if name else ""))
         email = get(row, "Email", "email").casefold()
         institution = get(row, "Institution", "institution")
         city_input = get(row, "City", "city")
@@ -411,20 +412,20 @@ def main():
         if city_result and (not cc or city_result["cc"] == cc) and not duplicate:
             x, y = projector(city_result["lat"], city_result["lon"])
             website_rows.append({
-                "name": name, "institution": institution, "country": country_std,
+                "name": name, "_sort_last_name": sort_last_name, "institution": institution, "country": country_std,
                 "latitude": f"{city_result['lat']:.5f}", "longitude": f"{city_result['lon']:.5f}",
                 "map_x": f"{x:.2f}", "map_y": f"{y:.2f}",
                 "research_areas": "; ".join(keywords), "profile_url": profile_url,
             })
         elif args.include_unresolved and not duplicate:
             website_rows.append({
-                "name": name, "institution": institution, "country": country_std,
+                "name": name, "_sort_last_name": sort_last_name, "institution": institution, "country": country_std,
                 "latitude": "", "longitude": "", "map_x": "", "map_y": "",
                 "research_areas": "; ".join(keywords), "profile_url": profile_url,
             })
 
         review_rows.append({
-            "name": name, "email": email, "institution": institution,
+            "name": name, "_sort_last_name": sort_last_name, "email": email, "institution": institution,
             "city_input": city_input, "city_matched": city_result["name"] if city_result else "",
             "country_input": country_input, "country_standardized": country_std,
             "country_code": cc,
@@ -432,6 +433,12 @@ def main():
             "profile_url": profile_url, "location_status": location_status,
             "location_note": notes, "duplicate_email": "yes" if duplicate else "no",
         })
+
+    # Sort member outputs alphabetically by family name, then by full name.
+    for output_rows in (website_rows, review_rows):
+        output_rows.sort(key=lambda r: (r["_sort_last_name"].casefold(), r["name"].casefold()))
+        for output_row in output_rows:
+            output_row.pop("_sort_last_name", None)
 
     def write_csv(path, fields, data, *, encoding="utf-8-sig"):
         """Write a CSV, allowing UTF-8 without BOM where strict headers matter."""

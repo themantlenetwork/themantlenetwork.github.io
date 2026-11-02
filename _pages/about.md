@@ -5,18 +5,23 @@ permalink: /about/
 image: /assets/images/trinity_hero.jpg
 ---
 
-The **MANTLE NETWORK Initiative** is an international collective of researchers, students and profesionnals dedicated to advancing our understanding of the Earth’s mantle and related planetary processes.
+The **MANTLE NETWORK Initiative** is an international collective of researchers, students and professionals dedicated to advancing our understanding of the Earth's mantle and related planetary processes.
 
-The goals of the initiative are to:
-- **Connect communities**, from geologists to geodynamicists, geophysicists, petrologists and geochemists — including the lava-side of the community.
-- **Promote scientific communication**, collaboration and knowledge sharing across the mantle research communities. 
-- **Foster synergies** by involving students, early-career researchers, scientists and professionals from all regions of the world.
+The initiative aims to:
 
-The initiative progressively emerged during the **Lherzolite Conference 2024** and **EMAW 2025**. Founded by [Romain Tilhac](https://romaintilhac.github.io) (CNRS, Géosciences Montpellier) in 2026, [mantlenetwork.org](https://mantlenetwork.org) was launched at **MEREMA 3** to showcase mantle science and serve as a hub for resources, webinars and meetings coordination.
+- 🌍 **Connect communities**, bringing together researchers across disciplines, from geologists and geochemists to petrologists, geophysicists and geodynamicists, as well as the broader magmatic and volcanic research communities.
+- 💡 **Promote scientific communication**, collaboration and knowledge sharing across mantle research communities.
+- 🤝 **Foster synergies** by engaging students, early-career researchers, established scientists and professionals from around the world.
 
-To learn more about our activities:
+The initiative progressively took shape through discussions and exchanges within the **Lherzolite Conference 2024** and **EMAW 2025** communities.
 
-<a href="/meetings" class="btn btn-meetings">Meetings</a>
-<a href="/webinars" class="btn btn-webinars">Webinars</a>
+Founded by [Romain Tilhac](https://romaintilhac.github.io) (CNRS, Géosciences Montpellier) in 2026, [mantlenetwork.org](https://mantlenetwork.org) was officially launched at **MEREMA 3**. The website aims to showcase mantle science and provide a central hub for scientific resources, webinars and meetings.
 
-{% include webinars-2027.html%}
+🌐 The initiative is supported by an international [**Scientific Committee**](/committee), bringing together researchers from across the mantle science community and representing a diversity of geographical regions, scientific disciplines and career stages.
+
+### Explore our activities
+
+<a href="/meetings" class="btn btn-meetings">🗓️ Meetings</a>
+<a href="/webinars" class="btn btn-webinars">🎙️ Webinars</a>
+
+{% include webinars-2027.html %}
