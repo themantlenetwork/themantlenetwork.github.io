@@ -1,84 +1,99 @@
-name: Update Scientific Committee
+name: Update scientific committee
 
 on:
   workflow_dispatch:
+  schedule:
+    - cron: "15 6 * * 1"
 
 permissions:
   contents: write
 
-jobs:
-  update:
-    runs-on: ubuntu-latest
+concurrency:
+  group: update-scientific-committee-map
+  cancel-in-progress: false
 
+jobs:
+  update-committee:
+    runs-on: ubuntu-latest
     steps:
-      - name: Checkout repository
-        uses: actions/checkout@v5
+      - name: Check out repository
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
 
       - name: Set up Python
-        uses: actions/setup-python@v6
+        uses: actions/setup-python@v5
         with:
           python-version: "3.12"
           cache: pip
           cache-dependency-path: requirements.txt
 
       - name: Install dependencies
-        run: |
-          python -m pip install --upgrade pip
-          pip install -r requirements.txt
+        run: python -m pip install -r requirements.txt
 
       - name: Download GeoNames reference data
         run: |
-          mkdir -p data/reference reports
-
-          curl -L \
+          mkdir -p _data/reference _data/private/committee
+          curl --fail --location --retry 3 \
             https://download.geonames.org/export/dump/cities1000.zip \
-            -o /tmp/cities1000.zip
-
-          unzip -o /tmp/cities1000.zip -d data/reference
-
-          curl -L \
+            --output /tmp/cities1000.zip
+          unzip -o /tmp/cities1000.zip -d /tmp/geonames
+          cp /tmp/geonames/cities1000.txt _data/reference/cities1000.txt
+          curl --fail --location --retry 3 \
             https://download.geonames.org/export/dump/countryInfo.txt \
-            -o data/reference/countryInfo.txt
+            --output _data/reference/countryInfo.txt
 
-      - name: Retrieve and process committee members
+      - name: Fetch Laposta members and build committee dataset
         env:
           LAPOSTA_API_KEY: ${{ secrets.LAPOSTA_API_KEY }}
         run: |
-          python scripts/geocode_subscribers.py \
+          python scripts/geocode_members.py \
             --laposta \
-            --list-name "The MANTLE NETWORK Initiative - Scientific committee" \
-            --member-state active \
-            --snapshot /tmp/committee.private.json \
-            --gazetteer data/reference/cities1000.txt \
-            --country-info data/reference/countryInfo.txt \
+            --snapshot _data/private/committee/laposta_snapshot.json \
+            --gazetteer _data/reference/cities1000.txt \
+            --country-info _data/reference/countryInfo.txt \
             --output _data/committee_members.csv \
-            --review reports/committee_review.csv \
-            --keywords reports/committee_keywords.csv \
+            --review _data/private/committee/committee_review.csv \
+            --keywords _data/private/committee/committee_keywords.csv \
             --min-members 1 \
             --max-drop-fraction 0.5
 
-      - name: Upload committee reports
+      - name: Create private ZIP artifact
         if: always()
+        run: |
+          python - <<'PY'
+          from pathlib import Path
+          from zipfile import ZipFile, ZIP_DEFLATED
+
+          private_dir = Path("_data/private/committee")
+          archive_path = Path("committee_private.zip")
+          files = sorted(path for path in private_dir.rglob("*") if path.is_file()) if private_dir.exists() else []
+
+          if files:
+              with ZipFile(archive_path, "w", ZIP_DEFLATED) as archive:
+                  for path in files:
+                      archive.write(path, path.relative_to(private_dir.parent))
+              print(f"Packaged {len(files)} file(s) from {private_dir}.")
+          else:
+              print("No private files were generated; no ZIP will be uploaded.")
+          PY
+
+      - name: Upload private ZIP artifact
+        if: always() && hashFiles('committee_private.zip') != ''
         uses: actions/upload-artifact@v4
         with:
-          name: committee-review-${{ github.run_number }}
-          path: |
-            reports/committee_review.csv
-            reports/committee_keywords.csv
-          if-no-files-found: warn
+          name: committee-private-${{ github.run_number }}
+          path: committee_private.zip
+          if-no-files-found: error
           retention-days: 14
-
-      - name: Commit updated committee data and keywords
+      - name: Commit public committee data if changed
         run: |
+          if git diff --quiet -- _data/committee_members.csv; then
+            echo "No changes to committee map data."
+            exit 0
+          fi
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-
           git add _data/committee_members.csv
-          git add reports/committee_keywords.csv
-
-          if git diff --cached --quiet; then
-            echo "No changes to committee data or keywords."
-          else
-            git commit -m "Update Scientific Committee data"
-            git push
-          fi
+          git commit -m "Update scientific committee map data"
+          git push

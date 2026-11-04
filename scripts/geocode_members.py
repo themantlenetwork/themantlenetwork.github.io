@@ -1,26 +1,26 @@
 #!/usr/bin/env python3
-"""Build the MANTLE NETWORK committee map from Laposta, JSON, Excel or CSV.
+"""Process MANTLE NETWORK members from Laposta, JSON, Excel or CSV.
 
-The processing pipeline is shared by all input sources. Public output is the
-Jekyll-compatible _data/members.csv. Review reports may contain personal data
-and should not be committed.
+The same processing pipeline supports both the scientific committee and the
+member directory. Public output is a Jekyll-compatible CSV; review and keyword
+reports may contain personal or operational data and should remain private.
 
 Examples
 --------
-Live Laposta update:
-    python scripts/geocode_subscribers.py --laposta
+Retrieve members from a specified Laposta list:
+    python scripts/geocode_members.py --laposta --list-name "YOUR LAPOSTA LIST NAME"
 
-Saved snapshot:
-    python scripts/geocode_subscribers.py --input data/private/laposta_committee.json
+Process a saved snapshot:
+    python scripts/geocode_members.py --input _data/private/committee/laposta_snapshot.json
 
-Manual CSV/XLSX:
-    python scripts/geocode_subscribers.py --input subscribers.xlsx
+Process a manual CSV/XLSX file:
+    python scripts/geocode_members.py --input subscribers.xlsx
 
 Disable keyword canonicalisation:
-    python scripts/geocode_subscribers.py --laposta --no-standardize-keywords
+    python scripts/geocode_members.py --input subscribers.xlsx --no-standardize-keywords
 
-Test without writing public output:
-    python scripts/geocode_subscribers.py --laposta --dry-run
+Test without writing the public CSV:
+    python scripts/geocode_members.py --laposta --list-name "YOUR LAPOSTA LIST NAME" --dry-run
 """
 
 import argparse
@@ -490,11 +490,11 @@ def main():
                         choices=("active", "unsubscribed", "bounced", "all"))
     parser.add_argument("--snapshot", default="",
                         help="optional private JSON snapshot path (Laposta mode)")
-    parser.add_argument("--gazetteer", default="data/reference/cities1000.txt")
+    parser.add_argument("--gazetteer", default="_data/reference/cities1000.txt")
     parser.add_argument("--country-info", default="")
-    parser.add_argument("--output", default="_data/members.csv")
-    parser.add_argument("--review", default="reports/members_review.csv")
-    parser.add_argument("--keywords", default="reports/keyword_inventory.csv")
+    parser.add_argument("--output", default="_data/committee_members.csv")
+    parser.add_argument("--review", default="_data/private/committee/committee_review.csv")
+    parser.add_argument("--keywords", default="_data/private/committee/committee_keywords.csv")
     parser.add_argument("--include-unresolved", action="store_true")
     parser.add_argument("--no-standardize-keywords", action="store_true",
                         help="retain submitted research-area text without canonicalisation")

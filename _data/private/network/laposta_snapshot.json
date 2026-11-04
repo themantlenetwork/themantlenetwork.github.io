@@ -1,0 +1,492 @@
+{
+  "metadata": {
+    "source": "Laposta API",
+    "list_name": "The MANTLE NETWORK Initiative - Member directory",
+    "list_id": "iw8jrtcqth",
+    "member_state_filter": "active",
+    "retrieved_at_utc": "2026-11-04T16:23:22.799886+00:00",
+    "record_count": 48
+  },
+  "members": [
+    {
+      "Email": "romain.tilhac@umontpellier.fr",
+      "First name": "Romain",
+      "Last name": "Tilhac",
+      "Institution": "CNRS Géosciences Montpellier",
+      "City": "Montpellier",
+      "Country": "France",
+      "Research areas": "petrology, geochemistry, isotope geochemistry, computational geochemistry",
+      "Profile URL": "https://romaintilhac.github.io"
+    },
+    {
+      "Email": "Alessio.Sanfilippo@unipv.it",
+      "First name": "Alessio",
+      "Last name": "Sanfilippo",
+      "Institution": "University of Pavia",
+      "City": "Pavia",
+      "Country": "Italia",
+      "Research areas": "Pertology and geochemistrry of abyssal/ophiolitic mantle. Magma melting and extraction. Radiogenic Isotope",
+      "Profile URL": ""
+    },
+    {
+      "Email": "giulio.borghini@unimi.it",
+      "First name": "Giulio",
+      "Last name": "Borghini",
+      "Institution": "Università degli Studi di Milano",
+      "City": "Milano",
+      "Country": "Italy",
+      "Research areas": "petrology, experimental petrology, geochemistry",
+      "Profile URL": "https://www.unimi.it/en/ugov/person/giulio-borghini"
+    },
+    {
+      "Email": "alessandra.montanini@unipr.it",
+      "First name": "Alessandra",
+      "Last name": "Montanini",
+      "Institution": "University of Parma",
+      "City": "Parma",
+      "Country": "Italy",
+      "Research areas": "Petrology, Geochemistry",
+      "Profile URL": ""
+    },
+    {
+      "Email": "arianna.secchiari@unimi.it",
+      "First name": "Arianna",
+      "Last name": "Secchiari",
+      "Institution": "University of Milan",
+      "City": "Milan",
+      "Country": "Italy",
+      "Research areas": "experimental petrology, petrology",
+      "Profile URL": "https://www.researchgate.net/profile/Arianna-Secchiari?ev=hdr_xprf"
+    },
+    {
+      "Email": "ashutp@iisertvm.ac.in",
+      "First name": "Ashutosh",
+      "Last name": "Pandey",
+      "Institution": "Indian Institute of Science Education and Research (IISER)",
+      "City": "Thiruvananthapuram",
+      "Country": "India",
+      "Research areas": "Igneous Petrology, Mantle Petrology, Geochemistry",
+      "Profile URL": "https://www.iisertvm.ac.in/faculty/ashutp"
+    },
+    {
+      "Email": "e.w.g.hellebrand@uu.nl",
+      "First name": "Eric",
+      "Last name": "Hellebrand",
+      "Institution": "Utrecht University",
+      "City": "Utrecht",
+      "Country": "Netherlands",
+      "Research areas": "petrology, micro-analysis",
+      "Profile URL": ""
+    },
+    {
+      "Email": "mavaras@uchile.cl",
+      "First name": "Maria",
+      "Last name": "Varas Reus",
+      "Institution": "University of Chile",
+      "City": "Santiago",
+      "Country": "Chile",
+      "Research areas": "isotope geochemistry; non traditional stable isotopes; mantle geochemistry",
+      "Profile URL": "https://www.mariavarasreus.com/"
+    },
+    {
+      "Email": "abderrahmane.bendaoud@usthb.edu.dz",
+      "First name": "Abderrahmane",
+      "Last name": "Bendaoud",
+      "Institution": "Laboratory of Geodynamics, Engineering geology and planetology, University of Science and Technology Houari Boumediene",
+      "City": "Alger",
+      "Country": "Algérie",
+      "Research areas": "Petrology, geochemistry, geodynamics, 3D cartography of the lithosphere",
+      "Profile URL": ""
+    },
+    {
+      "Email": "xiongqing@cug.edu.cn",
+      "First name": "Qing",
+      "Last name": "Xiong",
+      "Institution": "China University of Geosciences (Wuhan)",
+      "City": "Wuhan",
+      "Country": "China",
+      "Research areas": "Petrology; Geochemistry; Orogenic peridotite; Ophiolite; Mantle-derived metal mineralization; Serpentinization and carbonation",
+      "Profile URL": ""
+    },
+    {
+      "Email": "catharina.heckel@uni-muenster.de",
+      "First name": "Catharina",
+      "Last name": "Heckel",
+      "Institution": "University of Münster",
+      "City": "Münster",
+      "Country": "Germany",
+      "Research areas": "petrology, geochemistry",
+      "Profile URL": ""
+    },
+    {
+      "Email": "csaba.szabo@ttk.elte.hu",
+      "First name": "Csaba",
+      "Last name": "Szabo",
+      "Institution": "Lithosphere Fluid Research Lab, Institute of Geography and Earth Sciences, Eotvos University",
+      "City": "Budapest",
+      "Country": "Hungary",
+      "Research areas": "geochemistry, petrology",
+      "Profile URL": ""
+    },
+    {
+      "Email": "jfullea@ucm.es",
+      "First name": "Javier",
+      "Last name": "Fullea",
+      "Institution": "Universidad Complutense de Madrid (UCM)",
+      "City": "Madrid",
+      "Country": "Spain",
+      "Research areas": "geophysical modelling",
+      "Profile URL": ""
+    },
+    {
+      "Email": "warrenj@udel.edu",
+      "First name": "Jessica",
+      "Last name": "Warren",
+      "Institution": "University of Delaware",
+      "City": "Newark",
+      "Country": "USA",
+      "Research areas": "petrology, geochemistry, rheology, rock deformation",
+      "Profile URL": "https://www.jessicamwarren.com/"
+    },
+    {
+      "Email": "patko.levente@epss.hun-ren.hu",
+      "First name": "Levente",
+      "Last name": "Patko",
+      "Institution": "HUN-REN Institute of Earth Physics and Space Science",
+      "City": "Sopron",
+      "Country": "Hungary",
+      "Research areas": "geochemistry",
+      "Profile URL": "https://epss.hun-ren.hu/en/staff:patko.levente"
+    },
+    {
+      "Email": "michel.gregoire@cnrs.fr",
+      "First name": "Michel",
+      "Last name": "Grégoire",
+      "Institution": "French National Center for Scientific Research (CNRS)",
+      "City": "Toulouse",
+      "Country": "France",
+      "Research areas": "Petrology",
+      "Profile URL": ""
+    },
+    {
+      "Email": "akizawa@hiroshima-u.ac.jp",
+      "First name": "Norikatsu",
+      "Last name": "Akizawa",
+      "Institution": "Hiroshima University",
+      "City": "Higashi-Hiroshima",
+      "Country": "Japan",
+      "Research areas": "petrology, geochemistry",
+      "Profile URL": "https://researchmap.jp/akizawa?lang=en"
+    },
+    {
+      "Email": "agiuliani@carnegiescience.edu",
+      "First name": "Andrea",
+      "Last name": "Giuliani",
+      "Institution": "Carnegie Institution for Science - Washington, DC",
+      "City": "Washington",
+      "Country": "United States",
+      "Research areas": "Mineral deposits, petrology, geochemistry, geochronology",
+      "Profile URL": "https://carnegiescience.edu/bio/dr-andrea-giuliani"
+    },
+    {
+      "Email": "elisabetta.rampone@unige.it",
+      "First name": "Elisabetta",
+      "Last name": "Rampone",
+      "Institution": "Department of Earth, Environment and Life Science (DISTAV) - University of Genoa (Italy)",
+      "City": "Genova",
+      "Country": "Italy",
+      "Research areas": "Petrology and geochemistry",
+      "Profile URL": "https://rubrica.unige.it/personale/VUZBWVpu"
+    },
+    {
+      "Email": "olivier.alard@anu.edu.au",
+      "First name": "Olivier",
+      "Last name": "Alard",
+      "Institution": "The Australian National University",
+      "City": "Canberra",
+      "Country": "Australia",
+      "Research areas": "Geochemistry, Petrology",
+      "Profile URL": "https://earthsciences.anu.edu.au/people/professor-olivier-alard"
+    },
+    {
+      "Email": "yannick.bussweiler@uni-koeln.de",
+      "First name": "Yannick",
+      "Last name": "Bussweiler",
+      "Institution": "Institute of Geology and Mineralogy, University of Cologne",
+      "City": "Cologne",
+      "Country": "Germany",
+      "Research areas": "petrology, mineralogy, geochemistry",
+      "Profile URL": "https://geologie.uni-koeln.de/arbeitsgruppen/geo-kosmochemie/team/dr-yannick-bussweiler"
+    },
+    {
+      "Email": "luc-serge.doucet@curtin.edu.au",
+      "First name": "Luc",
+      "Last name": "Doucet",
+      "Institution": "Curtin University",
+      "City": "Perth",
+      "Country": "Australia",
+      "Research areas": "Igneous petroogy, geochemistry and geodynamics",
+      "Profile URL": "https://geodynamics.curtin.edu.au"
+    },
+    {
+      "Email": "stamatis.flemetakis@eaps.ethz.ch",
+      "First name": "Stamatis",
+      "Last name": "Flemetakis",
+      "Institution": "ETH Zürich",
+      "City": "Zurich",
+      "Country": "Switzerland",
+      "Research areas": "petrology, experimental petrology, geochemistry",
+      "Profile URL": "https://eaps.ethz.ch/en/people/profile.stamatis-flemetakis.html"
+    },
+    {
+      "Email": "sally@esc.cam.ac.uk",
+      "First name": "Sally",
+      "Last name": "Gibson",
+      "Institution": "University of Cambridge",
+      "City": "CAMBRIDGE",
+      "Country": "United Kingdom",
+      "Research areas": "Petrology, geochemistry, geodynamics",
+      "Profile URL": "https://www.esc.cam.ac.uk/people/sally-gibson"
+    },
+    {
+      "Email": "s.a.p.l.cloetingh@uu.nl",
+      "First name": "Sierd",
+      "Last name": "Cloetingh",
+      "Institution": "Utrecht University, Department of Earth Sciences",
+      "City": "Utrecht",
+      "Country": "Netherlands",
+      "Research areas": "Solid earth geophysics, tectonics, plume-lithosphere interaction, lithospheric dynamics, subduction initiation, intraplate deformation, sedimentary basin evolution, sea level change",
+      "Profile URL": "https://www.uu.nl/staff/SAPLCloetingh"
+    },
+    {
+      "Email": "patrizia.fumagalli@unimi.it",
+      "First name": "Patrizia",
+      "Last name": "Fumagalli",
+      "Institution": "University of Milan",
+      "City": "Milano",
+      "Country": "Italia",
+      "Research areas": "Experimental Petrology",
+      "Profile URL": ""
+    },
+    {
+      "Email": "oelazar@carnegiescience.edu",
+      "First name": "Oded",
+      "Last name": "Elazar",
+      "Institution": "Carnegie science",
+      "City": "Washington",
+      "Country": "United States",
+      "Research areas": "Mantle geochemistry",
+      "Profile URL": ""
+    },
+    {
+      "Email": "sarah.lambart@utah.edu",
+      "First name": "Sarah",
+      "Last name": "Lambart",
+      "Institution": "University of Utah",
+      "City": "Salt Lake City",
+      "Country": "United States",
+      "Research areas": "experimental petrology, high temperature geochemistry",
+      "Profile URL": "http://sarahlambart.com/index.html"
+    },
+    {
+      "Email": "jacek.puziewicz@pm.me",
+      "First name": "Jacek",
+      "Last name": "Puziewicz",
+      "Institution": "University of Wroclaw",
+      "City": "Wroclaw",
+      "Country": "Poland",
+      "Research areas": "petrology, mantle xenoliths,",
+      "Profile URL": ""
+    },
+    {
+      "Email": "maurizio.mazzucchelli@unimore.it",
+      "First name": "Maurizio",
+      "Last name": "Mazzucchelli",
+      "Institution": "Dipartimento di Scienze Chimiche e Geologiche - Università di Modena e Reggio Emilia",
+      "City": "Modena",
+      "Country": "Italy",
+      "Research areas": "petrology and geochemistry of mantle and lower crust",
+      "Profile URL": "https://unimore.unifind.cineca.it/get/person/014255"
+    },
+    {
+      "Email": "ndygert1@utk.edu",
+      "First name": "Nicholas",
+      "Last name": "Dygert",
+      "Institution": "University of Tennessee",
+      "City": "Knoxville",
+      "Country": "USA",
+      "Research areas": "petrology, geochemistry, experimental petrology, numerical modeling, rock deformation, planetary interiors",
+      "Profile URL": "https://dygert.utk.edu"
+    },
+    {
+      "Email": "carole.cordier@univ-grenoble-alpes.fr",
+      "First name": "Carole",
+      "Last name": "Cordier",
+      "Institution": "Isterre",
+      "City": "Grenoble",
+      "Country": "France",
+      "Research areas": "Petrology, in situ geochemistry",
+      "Profile URL": ""
+    },
+    {
+      "Email": "qwang@nju.edu.cn",
+      "First name": "Qin",
+      "Last name": "Wang",
+      "Institution": "Nanjing University",
+      "City": "Nanjing",
+      "Country": "China",
+      "Research areas": "Structural geology, rheology, rock physics",
+      "Profile URL": "https://es.nju.edu.cn/wq_en/list.htm"
+    },
+    {
+      "Email": "carlotta.ferrando@unige.it",
+      "First name": "Carlotta",
+      "Last name": "Ferrando",
+      "Institution": "DISTAV University of Genova",
+      "City": "Genova",
+      "Country": "Italy",
+      "Research areas": "Petrology",
+      "Profile URL": ""
+    },
+    {
+      "Email": "theodoros.ntaflos@univie.ac.at",
+      "First name": "Theo",
+      "Last name": "Ntaflos",
+      "Institution": "Dept. of Lithospheric Research, University of Vienna",
+      "City": "Vienna",
+      "Country": "Austria",
+      "Research areas": "Earth Mantle Petrology and Geochemistry",
+      "Profile URL": ""
+    },
+    {
+      "Email": "marguerite.Godard@umontpellier.fr",
+      "First name": "Marguerite",
+      "Last name": "Godard",
+      "Institution": "CNRS Géosciences Montpellier",
+      "City": "Montpellier",
+      "Country": "France",
+      "Research areas": "petrology, geochemistry",
+      "Profile URL": ""
+    },
+    {
+      "Email": "kwang@earth.sinica.edu.tw",
+      "First name": "Kuo-Lung",
+      "Last name": "Wang",
+      "Institution": "Institute of Earth Sciences, Academia Sinica",
+      "City": "Taipei",
+      "Country": "Taiwan",
+      "Research areas": "geochemistry, petrology, mantle xenoliths",
+      "Profile URL": ""
+    },
+    {
+      "Email": "bdpayot@up.edu.ph",
+      "First name": "Betchaida",
+      "Last name": "Payot",
+      "Institution": "University of the Philippines Diliman",
+      "City": "Quezon City",
+      "Country": "Philippines",
+      "Research areas": "petrology, geochemistry",
+      "Profile URL": ""
+    },
+    {
+      "Email": "daniele.brunelli@unimore.it",
+      "First name": "Daniele",
+      "Last name": "Brunelli",
+      "Institution": "Università di Modena e Reggio Emilia",
+      "City": "Modena",
+      "Country": "Italia",
+      "Research areas": "petrology, geochemistry",
+      "Profile URL": ""
+    },
+    {
+      "Email": "fernanda.gervasoni@ufpel.edu.br",
+      "First name": "Fernanda",
+      "Last name": "Gervasoni",
+      "Institution": "Federal University of Pelotas",
+      "City": "Pelotas",
+      "Country": "Brazil",
+      "Research areas": "mineralogy, petrology, experimental petrology,",
+      "Profile URL": ""
+    },
+    {
+      "Email": "jalowitzki@unb.br",
+      "First name": "Tiago",
+      "Last name": "Jalowitzki",
+      "Institution": "University of Brasília (UnB)",
+      "City": "Brasília",
+      "Country": "Brazil",
+      "Research areas": "Mineral chemistry, whole-rock geochemistry, radiogenic isotopes, noble gas isotopes, petrology, tectonic.",
+      "Profile URL": ""
+    },
+    {
+      "Email": "alessio.lavecchia@epss.hun-ren.hu",
+      "First name": "Alessio",
+      "Last name": "Lavecchia",
+      "Institution": "Institute of Earth Physics and Space Science (EPSS)",
+      "City": "Sopron",
+      "Country": "Hungary",
+      "Research areas": "Numerical modelling, Geodynamics",
+      "Profile URL": ""
+    },
+    {
+      "Email": "federico.casetta@univie.ac.at",
+      "First name": "Federico",
+      "Last name": "Casetta",
+      "Institution": "University of Vienna, Department of Lithospheric Research",
+      "City": "Vienna",
+      "Country": "Austria",
+      "Research areas": "Petrology, geochemistry, geodynamics, volcanology",
+      "Profile URL": "https://ucrisportal.univie.ac.at/en/persons/federico-casetta/"
+    },
+    {
+      "Email": "btikoff@wisc.edu",
+      "First name": "Basil",
+      "Last name": "Tikoff",
+      "Institution": "University of Wisconsin - Madison",
+      "City": "Madison",
+      "Country": "United States",
+      "Research areas": "structural geology, tectonics",
+      "Profile URL": "https://geoscience.wisc.edu/people/tikoff-basil/"
+    },
+    {
+      "Email": "moripta@gmail.com",
+      "First name": "Tomoaki",
+      "Last name": "Morishita",
+      "Institution": "Kanazawa University",
+      "City": "Kanazawa",
+      "Country": "Japan",
+      "Research areas": "Petrology, Ophiolite, xenolith, field work",
+      "Profile URL": ""
+    },
+    {
+      "Email": "veronique.le-roux@univ-lorraine.fr",
+      "First name": "Veronique",
+      "Last name": "Le Roux",
+      "Institution": "University of Lorraine / WHOI",
+      "City": "Nancy",
+      "Country": "France",
+      "Research areas": "Geochemistry, Petrology",
+      "Profile URL": "https://www.linkedin.com/in/veronique-le-roux-80a943203/"
+    },
+    {
+      "Email": "rgazzone@usp.br",
+      "First name": "Rogério",
+      "Last name": "Azzone",
+      "Institution": "USP - University of Sao Paulo",
+      "City": "São Paulo",
+      "Country": "Brazil",
+      "Research areas": "Kimberlites, Carbonatites and alkaline magmatism; Petrology and geochemistry of silica-undersaturated magmatic systems; Magmatic evolution and open-system processes; Mantle-derived magmas and mantle–crust interactions; Geochemistry of major, trac",
+      "Profile URL": ""
+    },
+    {
+      "Email": "magdalena.matusiak-malek@uwr.edu.pl",
+      "First name": "Magdalena",
+      "Last name": "Matusiak-Małek",
+      "Institution": "UNIWERSYTET WROCŁAWSKI",
+      "City": "Wrocław",
+      "Country": "Polska",
+      "Research areas": "Earth's mantle petrology, xenoliths, peridotites",
+      "Profile URL": ""
+    }
+  ]
+}
