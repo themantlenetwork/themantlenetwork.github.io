@@ -1,9 +1,11 @@
-name: Update member directory
+
+name: Update MANTLE NETWORK Member Directory
 
 on:
-  schedule:
-    - cron: "30 6 * * 1"
   workflow_dispatch:
+  schedule:
+    # Every Monday at 06:30 UTC.
+    - cron: "30 6 * * 1"
 
 permissions:
   contents: write
@@ -13,61 +15,73 @@ concurrency:
   cancel-in-progress: false
 
 jobs:
-  update-member-map:
+  update-map:
     runs-on: ubuntu-latest
 
     steps:
-      - name: Checkout repository
+      - name: Check out repository
         uses: actions/checkout@v5
+        with:
+          fetch-depth: 0
 
       - name: Set up Python
         uses: actions/setup-python@v6
         with:
           python-version: "3.12"
           cache: pip
+          cache-dependency-path: requirements.txt
 
       - name: Install dependencies
-        run: |
-          python -m pip install --upgrade pip
-          pip install -r requirements.txt
+        run: python -m pip install -r requirements.txt
 
-      - name: Check GeoNames reference files
+      - name: Download GeoNames reference data
         run: |
-          test -f data/reference/cities1000.txt
-          test -f data/reference/countryInfo.txt
+          mkdir -p data/reference
+          curl --fail --location --retry 3 \
+            https://download.geonames.org/export/dump/cities1000.zip \
+            --output /tmp/cities1000.zip
+          unzip -o /tmp/cities1000.zip -d data/reference
+          curl --fail --location --retry 3 \
+            https://download.geonames.org/export/dump/countryInfo.txt \
+            --output data/reference/countryInfo.txt
 
-      - name: Retrieve Member Directory subscribers
+      - name: Fetch Laposta members and build map
         env:
           LAPOSTA_API_KEY: ${{ secrets.LAPOSTA_API_KEY }}
         run: |
-          mkdir -p data/private reports
-
           python scripts/geocode_subscribers.py \
             --laposta \
             --list-name "The MANTLE NETWORK Initiative - Member directory" \
             --member-state active \
-            --snapshot data/private/laposta_member_directory.json \
-            --dry-run
-
-      - name: Generate Member Directory
-        run: |
-          python scripts/geocode_subscribers.py \
-            --input data/private/laposta_member_directory.json \
+            --snapshot /tmp/laposta_directory.private.json \
+            --gazetteer data/reference/cities1000.txt \
+            --country-info data/reference/countryInfo.txt \
             --output _data/network_members.csv \
-            --review reports/network_members_review.csv \
-            --keywords reports/network_members_keywords.csv \
+            --review /tmp/network_members_review.csv \
+            --keywords /tmp/network_members_keywords.csv \
             --min-members 1 \
             --max-drop-fraction 0.5
 
-      - name: Commit updated Member Directory
+      - name: Upload private quality-control reports
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: member-directory-review-${{ github.run_number }}
+          path: |
+            /tmp/network_members_review.csv
+            /tmp/network_members_keywords.csv
+          if-no-files-found: ignore
+          retention-days: 14
+
+      - name: Commit public map data if changed
         run: |
+          if git diff --quiet -- _data/network_members.csv; then
+            echo "No changes to Member Directory data."
+            exit 0
+          fi
+
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-
-          if [[ -z "$(git status --porcelain -- _data/network_members.csv)" ]]; then
-            echo "Member Directory is already up to date."
-          else
-            git add _data/network_members.csv
-            git commit -m "Update MANTLE NETWORK Member Directory"
-            git push
-          fi
+          git add _data/network_members.csv
+          git commit -m "Update MANTLE NETWORK Member Directory"
+          git push
