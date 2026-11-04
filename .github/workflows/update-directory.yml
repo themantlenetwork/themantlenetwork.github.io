@@ -1,0 +1,73 @@
+name: Update member directory
+
+on:
+  schedule:
+    - cron: "30 6 * * 1"
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+concurrency:
+  group: update-member-directory-map
+  cancel-in-progress: false
+
+jobs:
+  update-member-map:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v5
+
+      - name: Set up Python
+        uses: actions/setup-python@v6
+        with:
+          python-version: "3.12"
+          cache: pip
+
+      - name: Install dependencies
+        run: |
+          python -m pip install --upgrade pip
+          pip install -r requirements.txt
+
+      - name: Check GeoNames reference files
+        run: |
+          test -f data/reference/cities1000.txt
+          test -f data/reference/countryInfo.txt
+
+      - name: Retrieve Member Directory subscribers
+        env:
+          LAPOSTA_API_KEY: ${{ secrets.LAPOSTA_API_KEY }}
+        run: |
+          mkdir -p data/private reports
+
+          python scripts/geocode_subscribers.py \
+            --laposta \
+            --list-name "The MANTLE NETWORK Initiative - Member directory" \
+            --member-state active \
+            --snapshot data/private/laposta_member_directory.json \
+            --dry-run
+
+      - name: Generate Member Directory
+        run: |
+          python scripts/geocode_subscribers.py \
+            --input data/private/laposta_member_directory.json \
+            --output _data/network_members.csv \
+            --review reports/network_members_review.csv \
+            --keywords reports/network_members_keywords.csv \
+            --min-members 1 \
+            --max-drop-fraction 0.5
+
+      - name: Commit updated Member Directory
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+
+          if [[ -z "$(git status --porcelain -- _data/network_members.csv)" ]]; then
+            echo "Member Directory is already up to date."
+          else
+            git add _data/network_members.csv
+            git commit -m "Update MANTLE NETWORK Member Directory"
+            git push
+          fi

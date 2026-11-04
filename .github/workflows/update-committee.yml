@@ -1,4 +1,4 @@
-name: Update scientific committee map
+name: Update scientific committee
 
 on:
   workflow_dispatch:
@@ -10,11 +10,11 @@ permissions:
   contents: write
 
 concurrency:
-  group: update-committee-map
+  group: update-scientific-committee-map
   cancel-in-progress: false
 
 jobs:
-  update-map:
+  update-committee-map:
     runs-on: ubuntu-latest
     steps:
       - name: Check out repository
