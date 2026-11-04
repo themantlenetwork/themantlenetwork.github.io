@@ -1,200 +1,89 @@
-# MANTLE NETWORK data directory
+# The MANTLE NETWORK Initiative
 
-This directory contains the public data files used by the MANTLE NETWORK
-website, reference data required by the member-processing scripts, and a
-private working area for data retrieved from Laposta.
+Official website of **The MANTLE NETWORK Initiative**, an international collective of researchers, students and professionals working to advance our understanding of the Earth's mantle.
 
-## Directory structure
+Website: [mantlenetwork.org](https://mantlenetwork.org)
 
-``` text
-_data/
-├── committee_members.csv
-├── network_members.csv
-├── reference/
-│   ├── cities1000.txt
-│   └── countryInfo.txt
-└── private/                       # ignored by Git
-    ├── committee/
-    │   ├── laposta_snapshot.json
-    │   ├── committee_review.csv
-    │   └── committee_keywords.csv
-    ├── network/
-    │   ├── laposta_snapshot.json
-    │   ├── network_review.csv
-    │   └── network_keywords.csv
-    └── newsletter/
-        ├── laposta_snapshot.json
-        └── subscribers.csv
+## About this repository
+
+This repository contains the Jekyll website and the scripts and workflows used to maintain selected community datasets.
+
+The site is built with [Jekyll](https://jekyllrb.com/), using the Basically Basic theme and custom layouts, includes and styles. GitHub Pages publishes the site at [mantlenetwork.org](https://mantlenetwork.org).
+
+## Repository structure
+
+```text
+.
+├── _config.yml                 # Jekyll configuration
+├── _data/                      # Website datasets, references and data README
+├── _events/                    # Event collection
+├── _highlights/                # Homepage highlights
+├── _includes/                  # Reusable Liquid/HTML components
+├── _layouts/                   # Page layouts
+├── _pages/                     # Main website pages
+├── _posts/                     # News and blog posts
+├── _sass/                      # Sass stylesheets
+├── assets/                     # Images, fonts and other static assets
+├── forms/                      # Form pages
+├── resources/                  # Downloadable resources
+├── scripts/                    # Python data processing and shell launchers
+├── .github/workflows/          # Scheduled and manual data workflows
+├── Gemfile                     # Ruby/Jekyll dependencies
+├── Gemfile.lock                # Locked Ruby dependencies
+├── requirements.txt            # Python script dependencies
+└── README.md
 ```
 
-The private directories and their contents are not committed to the
-repository. The public CSV files are the data products intended for use
-by the website.
+## Run the website locally
 
-## Data sources and outputs
+Requirements: Ruby, Bundler and the dependencies specified in `Gemfile`.
 
-  -------------------------------------------------------------------------------
-  Dataset           Source            Public output             Private outputs
-  ----------------- ----------------- ------------------------- -----------------
-  Scientific        Laposta committee `committee_members.csv`   Snapshot, review
-  committee         list                                        CSV and keyword
-                                                                CSV
+From the repository root:
 
-  Network directory Laposta           `network_members.csv`     Snapshot, review
-                    network/member                              CSV and keyword
-                    list                                        CSV
-
-  Newsletter        Laposta           None                      Snapshot and
-                    newsletter list                             subscribers CSV
-  -------------------------------------------------------------------------------
-
-Newsletter subscriber data is not published on the website. The
-newsletter workflow only creates and uploads a private artifact; it does
-not commit or push generated files to the repository.
-
-## Processing scripts
-
-The scripts are located in `scripts/` at the repository root.
-
--   `geocode_members.py` is the shared processing script for committee
-    and network datasets. It processes the relevant Laposta data, uses
-    the GeoNames reference files for geocoding, and generates the public
-    CSV and private review outputs.
--   `update_committee_members.sh` runs the committee update.
--   `update_network_members.sh` runs the network directory update.
--   `newsletter_subscribers.py` retrieves newsletter subscribers from
-    Laposta and generates the private newsletter snapshot and CSV.
--   `update_newsletter_subscribers.sh` runs the newsletter update.
-
-The committee and network launchers use the same processing logic but
-write to separate public and private destinations.
-
-## GeoNames reference data
-
-The files in `reference/` support the geocoding performed by
-`geocode_members.py`:
-
--   `cities1000.txt`
--   `countryInfo.txt`
-
-The committee workflow downloads these reference files when it runs. The
-network workflow uses the reference files already present in
-`_data/reference/`.
-
-## GitHub Actions workflows
-
-Three workflows automate the updates. Each can be run manually and is
-also scheduled to run weekly.
-
-  ---------------------------------------------------------------------------------------------------------------------------
-  Workflow file                               Purpose           Repository changes        Artifact
-  ------------------------------------------- ----------------- ------------------------- -----------------------------------
-  `.github/workflows/update-committee.yml`    Refresh committee Commits and pushes        `committee-private-<run number>`
-                                              data              `committee_members.csv`   
-                                                                only when it changes      
-
-  `.github/workflows/update-directory.yml`    Refresh network   Commits and pushes        `network-private-<run number>`
-                                              directory data    `network_members.csv`     
-                                                                only when it changes      
-
-  `.github/workflows/update-newsletter.yml`   Refresh           No commit or push;        `newsletter-private-<run number>`
-                                              newsletter        repository permission is  
-                                              subscriber data   read-only                 
-  ---------------------------------------------------------------------------------------------------------------------------
-
-### Committee workflow
-
-1.  Checks out the repository and prepares the Python environment.
-2.  Downloads the GeoNames reference files into `_data/reference/`.
-3.  Runs `scripts/update_committee_members.sh`, using the
-    `LAPOSTA_API_KEY` GitHub Actions secret.
-4.  Generates `_data/committee_members.csv` and the private committee
-    files.
-5.  Commits and pushes the public CSV only if it has changed.
-6.  Uploads `_data/private/committee/` as a downloadable GitHub Actions
-    artifact.
-
-### Network directory workflow
-
-1.  Checks out the repository and prepares the Python environment.
-2.  Uses the GeoNames files already stored in `_data/reference/`.
-3.  Runs `scripts/update_network_members.sh`, using the
-    `LAPOSTA_API_KEY` GitHub Actions secret.
-4.  Generates `_data/network_members.csv` and the private network files.
-5.  Commits and pushes the public CSV only if it has changed.
-6.  Uploads `_data/private/network/` as a downloadable GitHub Actions
-    artifact.
-
-### Newsletter workflow
-
-1.  Checks out the repository and prepares the Python environment.
-2.  Runs `scripts/update_newsletter_subscribers.sh`, using the
-    `LAPOSTA_API_KEY` GitHub Actions secret.
-3.  Generates `_data/private/newsletter/laposta_snapshot.json` and
-    `_data/private/newsletter/subscribers.csv`.
-4.  Uploads `_data/private/newsletter/` as a downloadable GitHub Actions
-    artifact.
-
-The newsletter workflow does **not** commit or push anything. It has
-read-only repository permissions. Its output is retained only as a
-GitHub Actions artifact, subject to the configured artifact retention
-period.
-
-## Private files and Git
-
-The repository `.gitignore` excludes the entire private data directory:
-
-``` gitignore
-_data/private/
+```bash
+bundle install
+bundle exec jekyll serve
 ```
 
-This keeps raw snapshots, review files and newsletter subscriber
-information out of Git history and out of the public website repository.
+Open the local address printed by Jekyll (usually http://localhost:4000). Changes to pages and most site files are rebuilt automatically while the server is running.
 
-The private files are made available through GitHub Actions artifacts
-for a limited period. The current workflows configure artifact retention
-for 14 days.
+## Data maintenance
 
-### Artifact packaging
+The repository includes automated Laposta pipelines for:
 
-The workflows upload the relevant private directory directly with
-`actions/upload-artifact@v4`.
+- the scientific committee map;
+- the member directory map;
+- the newsletter subscriber export.
 
-Do not manually ZIP the private directory before uploading it. GitHub
-Actions automatically packages an uploaded directory as a downloadable
-ZIP archive. Manually creating a ZIP first would produce an archive
-nested inside the GitHub artifact archive.
+The first two pipelines generate public CSV files used by the website, alongside private review outputs. The newsletter pipeline creates a private export only; it does not publish subscriber data or commit generated files.
 
-## Configuration and credentials
+For the data structure, inputs and outputs, local commands, GeoNames reference data, credentials and workflow details, see [`_data/README.md`](_data/README.md).
 
--   Local runs use `LAPOSTA_API_KEY` from the repository-root `.env`
-    file.
--   GitHub Actions use the repository secret named `LAPOSTA_API_KEY`.
--   The API key must never be committed to Git or included in generated
-    CSV, JSON or log output.
+### Python environment
 
-## Running updates locally
+The data scripts use Python 3.12 in GitHub Actions. Install their dependencies with:
 
-From the repository root, run the relevant launcher:
-
-``` bash
-bash scripts/update_committee_members.sh
-bash scripts/update_network_members.sh
-bash scripts/update_newsletter_subscribers.sh
+```bash
+python -m pip install -r requirements.txt
 ```
 
-Make sure the required Python environment and dependencies are installed
-and that `.env` contains a valid `LAPOSTA_API_KEY`. The committee and
-network scripts also require the GeoNames reference data in
-`_data/reference/`; the committee workflow downloads these files
-automatically.
+Local Laposta updates require a root-level `.env` file containing `LAPOSTA_API_KEY`. In GitHub Actions, this is configured as a repository secret with the same name. Never commit credentials or private subscriber/member exports.
 
-## Current scope and future development
+## GitHub Actions
 
-These scripts and workflows form the current CSV-based data-processing
-pipeline. They keep the public website datasets separate from private
-snapshots and administrative outputs.
+The workflows under `.github/workflows/` run weekly and can also be triggered manually from the Actions tab:
 
-A central database and a more comprehensive data-management layer may be
-developed separately in the future. They are not part of the current
-workflows described here.
+- `update-committee.yml`
+- `update-directory.yml`
+- `update-newsletter.yml`
+
+The committee and directory workflows push changes to their respective public CSV only when the generated file differs. The newsletter workflow uploads its private results as a downloadable artifact and does not push to the repository.
+
+## Dependencies
+
+- **Website:** Ruby dependencies are defined in `Gemfile` and locked in `Gemfile.lock`.
+- **Data scripts:** Python dependencies are defined in `requirements.txt`.
+
+## Privacy
+
+Public website datasets belong in `_data/`. Private Laposta snapshots, subscriber exports and review files belong under `_data/private/` and must remain excluded from Git. Keep API credentials in local environment files or GitHub Actions secrets, never in source code.
