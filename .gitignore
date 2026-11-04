@@ -1,7 +1,47 @@
-_site/
-.DS_Store
-.DS_Store
-_sass/.DS_Store
-assets/.DS_Store
-.DS_Store
+# ==========================================
+# MANTLE NETWORK – Git Ignore
+# ==========================================
 
+# Jekyll generated files
+_site/
+.jekyll-cache/
+.sass-cache/
+
+# macOS
+.DS_Store
+.AppleDouble
+.LSOverride
+
+# Python
+__pycache__/
+*.py[cod]
+*.pyo
+.venv/
+venv/
+env/
+
+# Python environments and tooling
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.ipynb_checkpoints/
+
+# Private data and local reports
+data/private/
+reports/*
+!reports/.gitkeep
+
+# Environment variables and secrets
+.env
+.env.*
+!.env.example
+
+# Temporary files
+*.tmp
+*.bak
+*.swp
+*.swo
+*~
+
+# Logs
+*.log

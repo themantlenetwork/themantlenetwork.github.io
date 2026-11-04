@@ -1,0 +1,1 @@
+Add automated tests for keyword standardisation, field mapping, geocoding, deduplication and output validation here. The initial automation bundle does not yet include fixture data containing committee personal information.
