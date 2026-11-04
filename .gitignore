@@ -1,3 +1,4 @@
+```gitignore
 # ==========================================
 # MANTLE NETWORK – Git Ignore
 # ==========================================
@@ -30,6 +31,8 @@ env/
 data/private/
 reports/*
 !reports/.gitkeep
+!reports/committee_keywords.csv
+!reports/directory_keywords.csv
 
 # Environment variables and secrets
 .env
@@ -45,3 +48,4 @@ reports/*
 
 # Logs
 *.log
+```

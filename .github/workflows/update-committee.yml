@@ -1,5 +1,4 @@
-
-name: Update MANTLE NETWORK Scientific Committee
+name: Update Scientific Committee
 
 on:
   workflow_dispatch:
@@ -7,19 +6,13 @@ on:
 permissions:
   contents: write
 
-concurrency:
-  group: update-scientific-committee-map
-  cancel-in-progress: false
-
 jobs:
-  update-map:
+  update:
     runs-on: ubuntu-latest
 
     steps:
-      - name: Check out repository
+      - name: Checkout repository
         uses: actions/checkout@v5
-        with:
-          fetch-depth: 0
 
       - name: Set up Python
         uses: actions/setup-python@v6
@@ -29,20 +22,25 @@ jobs:
           cache-dependency-path: requirements.txt
 
       - name: Install dependencies
-        run: python -m pip install -r requirements.txt
+        run: |
+          python -m pip install --upgrade pip
+          pip install -r requirements.txt
 
       - name: Download GeoNames reference data
         run: |
-          mkdir -p data/reference
-          curl --fail --location --retry 3 \
-            https://download.geonames.org/export/dump/cities1000.zip \
-            --output /tmp/cities1000.zip
-          unzip -o /tmp/cities1000.zip -d data/reference
-          curl --fail --location --retry 3 \
-            https://download.geonames.org/export/dump/countryInfo.txt \
-            --output data/reference/countryInfo.txt
+          mkdir -p data/reference reports
 
-      - name: Fetch Laposta members and build map
+          curl -L \
+            https://download.geonames.org/export/dump/cities1000.zip \
+            -o /tmp/cities1000.zip
+
+          unzip -o /tmp/cities1000.zip -d data/reference
+
+          curl -L \
+            https://download.geonames.org/export/dump/countryInfo.txt \
+            -o data/reference/countryInfo.txt
+
+      - name: Retrieve and process committee members
         env:
           LAPOSTA_API_KEY: ${{ secrets.LAPOSTA_API_KEY }}
         run: |
@@ -54,31 +52,33 @@ jobs:
             --gazetteer data/reference/cities1000.txt \
             --country-info data/reference/countryInfo.txt \
             --output _data/committee_members.csv \
-            --review /tmp/committee_review.csv \
-            --keywords /tmp/committee_keywords.csv \
+            --review reports/committee_review.csv \
+            --keywords reports/committee_keywords.csv \
             --min-members 1 \
             --max-drop-fraction 0.5
 
-      - name: Upload private quality-control reports
+      - name: Upload committee reports
         if: always()
         uses: actions/upload-artifact@v4
         with:
           name: committee-review-${{ github.run_number }}
           path: |
-            /tmp/committee_review.csv
-            /tmp/committee_keywords.csv
-          if-no-files-found: ignore
+            reports/committee_review.csv
+            reports/committee_keywords.csv
+          if-no-files-found: warn
           retention-days: 14
 
-      - name: Commit public map data if changed
+      - name: Commit updated committee data and keywords
         run: |
-          if git diff --quiet -- _data/committee_members.csv; then
-            echo "No changes to Scientific Committee data."
-            exit 0
-          fi
-
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+
           git add _data/committee_members.csv
-          git commit -m "Update scientific committee map data"
-          git push
+          git add reports/committee_keywords.csv
+
+          if git diff --cached --quiet; then
+            echo "No changes to committee data or keywords."
+          else
+            git commit -m "Update Scientific Committee data"
+            git push
+          fi
