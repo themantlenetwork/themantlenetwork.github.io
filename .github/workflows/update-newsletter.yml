@@ -1,0 +1,45 @@
+name: Export newsletter subscribers
+
+on:
+  workflow_dispatch:
+  schedule:
+    - cron: "45 6 * * 1"
+
+permissions:
+  contents: read
+
+concurrency:
+  group: export-newsletter-subscribers
+  cancel-in-progress: false
+
+jobs:
+  export-newsletter:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Check out repository
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Install dependencies
+        run: python -m pip install --upgrade pip requests
+
+      - name: Fetch newsletter subscribers
+        env:
+          LAPOSTA_API_KEY: ${{ secrets.LAPOSTA_API_KEY }}
+        run: |
+          bash scripts/update_newsletter_subscribers.sh
+
+      # upload-artifact creates the downloadable ZIP itself.
+      # Upload the directory directly: do not create a ZIP beforehand.
+      - name: Upload newsletter private files
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: newsletter-private-${{ github.run_number }}
+          path: _data/private/newsletter/
+          if-no-files-found: warn
+          retention-days: 14
