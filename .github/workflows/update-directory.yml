@@ -54,34 +54,15 @@ jobs:
             --min-members 1 \
             --max-drop-fraction 0.5
 
-      - name: Create private ZIP artifact
+      - name: Upload network private files
         if: always()
-        run: |
-          python - <<'PY'
-          from pathlib import Path
-          from zipfile import ZipFile, ZIP_DEFLATED
-
-          private_dir = Path("_data/private/network")
-          archive_path = Path("network_private.zip")
-          files = sorted(path for path in private_dir.rglob("*") if path.is_file()) if private_dir.exists() else []
-
-          if files:
-              with ZipFile(archive_path, "w", ZIP_DEFLATED) as archive:
-                  for path in files:
-                      archive.write(path, path.relative_to(private_dir.parent))
-              print(f"Packaged {len(files)} file(s) from {private_dir}.")
-          else:
-              print("No private files were generated; no ZIP will be uploaded.")
-          PY
-
-      - name: Upload private ZIP artifact
-        if: always() && hashFiles('network_private.zip') != ''
         uses: actions/upload-artifact@v4
         with:
           name: network-private-${{ github.run_number }}
-          path: network_private.zip
-          if-no-files-found: error
+          path: _data/private/network/
+          if-no-files-found: warn
           retention-days: 14
+
       - name: Commit public network data if changed
         run: |
           if git diff --quiet -- _data/network_members.csv; then
