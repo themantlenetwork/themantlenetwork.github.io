@@ -27,12 +27,8 @@ env/
 .ruff_cache/
 .ipynb_checkpoints/
 
-# Private data and local reports
-data/private/
-reports/*
-!reports/.gitkeep
-!reports/committee_keywords.csv
-!reports/directory_keywords.csv
+# Private data
+_data/private/
 
 # Environment variables and secrets
 .env
