@@ -27,4 +27,4 @@ The first meeting was held in Ferrara (Italy) in 2007, organized by M. Coltorti 
 
 - **5<sup>th</sup> EMAW** 13 - 16 July 2025 - Vienna (Austria) [Abstract book](/resources/EMAW25_abstract-book.pdf).
 
-- **6<sup>th</sup> EMAW** 5 - 9 July - Sopron (Hungary)  [Official page](https://emaw2027.epss.hu/en/).
+- **6<sup>th</sup> EMAW** 5 - 9 July 2027 - Sopron (Hungary)  [Official page](https://emaw2027.epss.hu/en/).
